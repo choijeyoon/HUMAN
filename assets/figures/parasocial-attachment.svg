@@ -1,34 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
-  <title id="title">Parasocial attachment conceptual figure</title>
-  <desc id="desc">A conceptual diagram of repeated exposure, familiarity, prediction and identity in a one-sided mediated bond.</desc>
-  <rect width="1400" height="900" fill="#f3f0e8"/>
-  <g fill="none" stroke="#11110f" stroke-width="2">
-    <circle cx="330" cy="420" r="118"/>
-    <path d="M270 446c20 42 98 42 120 0M290 385h1M370 385h1"/>
-    <rect x="850" y="235" width="330" height="360"/>
-    <circle cx="1015" cy="380" r="74"/>
-    <path d="M965 408c18 28 78 28 98 0M982 356h1M1048 356h1"/>
-    <path d="M462 420 C610 330 695 330 845 390" stroke-dasharray="8 12"/>
-    <path d="M462 454 C610 548 695 548 845 462" stroke-dasharray="8 12"/>
-    <path d="M505 275 C655 205 740 208 842 292" opacity=".45"/>
-    <path d="M508 600 C650 670 752 660 845 563" opacity=".45"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Parasocial bond and expectation update conceptual figure</title>
+  <desc id="desc">A three-stage conceptual model showing media exposure, construction of a social model, and emotional update after unexpected dating news, with fandom identity acting as an amplifier.</desc>
+  <rect width="1600" height="980" fill="#f3f0e8"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#11110f">
+    <text x="76" y="74" font-size="17" letter-spacing="4">FIG. 01 / FROM EXPOSURE TO EXPECTATION UPDATE</text>
+    <text x="76" y="918" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — SYNTHESIS OF LITERATURE, NOT AN EMPIRICALLY ESTIMATED CAUSAL MODEL</text>
   </g>
-  <g fill="none" stroke="#6e211b" stroke-width="2">
-    <circle cx="330" cy="420" r="154"/><circle cx="330" cy="420" r="184" opacity=".45"/>
-    <circle cx="1015" cy="380" r="112"/><circle cx="1015" cy="380" r="145" opacity=".45"/>
-    <path d="M520 420 H825"/>
+
+  <!-- column rules -->
+  <g stroke="#aaa69c" stroke-width="1">
+    <line x1="520" y1="130" x2="520" y2="830"/>
+    <line x1="1040" y1="130" x2="1040" y2="830"/>
   </g>
-  <g fill="#6e211b"><circle cx="520" cy="420" r="8"/><circle cx="665" cy="420" r="8"/><circle cx="825" cy="420" r="8"/></g>
-  <g font-family="Helvetica,Arial,sans-serif" fill="#11110f" font-size="17" letter-spacing="3">
-    <text x="70" y="82">FIG. 01 / PARASOCIAL ATTACHMENT</text>
-    <text x="250" y="660">SELF</text>
-    <text x="943" y="660">MEDIATED FIGURE</text>
-    <text x="525" y="390">EXPOSURE</text>
-    <text x="632" y="390">FAMILIARITY</text>
-    <text x="752" y="390">PREDICTION</text>
-    <text x="70" y="830">CONCEPTUAL FIGURE — NOT EMPIRICAL DATA</text>
+
+  <!-- section headers -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3" fill="#6e211b">
+    <text x="80" y="160">01 / MEDIA INPUT</text>
+    <text x="565" y="160">02 / INTERNAL SOCIAL MODEL</text>
+    <text x="1085" y="160">03 / EVENT UPDATE</text>
+  </g>
+
+  <!-- left: inputs -->
+  <g fill="none" stroke="#11110f" stroke-width="1.4">
+    <rect x="82" y="220" width="350" height="92"/>
+    <rect x="82" y="342" width="350" height="92"/>
+    <rect x="82" y="464" width="350" height="92"/>
   </g>
   <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
-    <text x="70" y="775" font-size="48">One-sided does not mean psychologically empty.</text>
+    <text x="108" y="257" font-size="29">Repeated exposure</text>
+    <text x="108" y="287" font-size="16" fill="#66625b">face · voice · narrative continuity</text>
+    <text x="108" y="379" font-size="29">Intimacy cues</text>
+    <text x="108" y="409" font-size="16" fill="#66625b">self-disclosure · direct address · access</text>
+    <text x="108" y="501" font-size="29">Community context</text>
+    <text x="108" y="531" font-size="16" fill="#66625b">shared rituals · fan discourse · norms</text>
   </g>
+
+  <!-- middle: internal model -->
+  <g fill="none" stroke="#11110f" stroke-width="1.4">
+    <rect x="575" y="220" width="370" height="96"/>
+    <rect x="575" y="356" width="370" height="96"/>
+    <rect x="575" y="492" width="370" height="96"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="602" y="258" font-size="31">Familiarity</text>
+    <text x="602" y="289" font-size="16" fill="#66625b">a stable representation of the person</text>
+    <text x="602" y="394" font-size="31">Perceived intimacy</text>
+    <text x="602" y="425" font-size="16" fill="#66625b">psychological closeness without reciprocity</text>
+    <text x="602" y="530" font-size="31">Expectation</text>
+    <text x="602" y="561" font-size="16" fill="#66625b">a model of who they are and what is possible</text>
+  </g>
+
+  <!-- arrows from inputs to internal model -->
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M432 266 H548"/>
+    <path d="M432 388 C480 388 510 404 548 404"/>
+    <path d="M432 510 C480 510 510 540 548 540"/>
+  </g>
+  <g fill="#6e211b"><path d="M548 266l-10-6v12z"/><path d="M548 404l-10-6v12z"/><path d="M548 540l-10-6v12z"/></g>
+
+  <!-- right: event update -->
+  <g fill="none" stroke="#11110f" stroke-width="1.4">
+    <rect x="1094" y="220" width="392" height="104"/>
+    <rect x="1094" y="374" width="392" height="104"/>
+    <rect x="1094" y="528" width="392" height="170"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="1120" y="260" font-size="32">Dating news</text>
+    <text x="1120" y="291" font-size="16" fill="#66625b">unexpected social information</text>
+    <text x="1120" y="414" font-size="32">Model violation</text>
+    <text x="1120" y="445" font-size="16" fill="#66625b">prediction revision · loss of imagined possibility</text>
+    <text x="1120" y="568" font-size="30">Possible responses</text>
+    <text x="1120" y="610" font-size="18">disappointment</text>
+    <text x="1290" y="610" font-size="18">jealousy</text>
+    <text x="1120" y="645" font-size="18">withdrawal</text>
+    <text x="1290" y="645" font-size="18">acceptance</text>
+    <text x="1120" y="680" font-size="18">identity defence</text>
+    <text x="1290" y="680" font-size="18">model update</text>
+  </g>
+
+  <!-- update arrows -->
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M945 540 C1000 540 1010 272 1070 272" stroke-dasharray="7 8"/>
+    <path d="M1290 324 V348"/>
+    <path d="M1290 478 V502"/>
+  </g>
+  <g fill="#6e211b"><path d="M1070 272l-10-6v12z"/><path d="M1290 348l-6-10h12z"/><path d="M1290 502l-6-10h12z"/></g>
+
+  <!-- identity amplifier -->
+  <rect x="570" y="690" width="420" height="112" fill="#11110f"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
+    <text x="596" y="724" font-size="13" font-weight="700" letter-spacing="3">AMPLIFIER / FANDOM IDENTITY</text>
+    <text x="596" y="760" font-family="Georgia,Times New Roman,serif" font-size="24">The event can touch a group identity,</text>
+    <text x="596" y="789" font-family="Georgia,Times New Roman,serif" font-size="24">not only an imagined dyad.</text>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M990 746 C1060 746 1052 614 1094 614"/>
+  </g>
+  <path d="M1094 614l-10-6v12z" fill="#6e211b"/>
+
+  <!-- bottom statement -->
+  <text x="76" y="870" font-family="Georgia,Times New Roman,serif" font-size="42" fill="#11110f">The reaction is an update to a social model — not evidence of a single “betrayal mechanism.”</text>
 </svg>
