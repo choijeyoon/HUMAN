@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://choijeyoon.github.io/HUMAN/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/en/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/ko/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/ja/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/es/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/zh/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/articles/</loc></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/en/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/articles/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/editorial-standards/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/en/articles/idol-dating-betrayal/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/en/articles/ai-love/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/en/articles/scrolling/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/en/love/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/en/ai/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/en/kpop/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/en/attention/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/en/society/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/en/consciousness/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/en/articles/idol-dating-betrayal/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/en/articles/ai-love/</loc></url>
-  <url><loc>https://choijeyoon.github.io/HUMAN/en/articles/scrolling/</loc></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/ko/</loc></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/ja/</loc></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/es/</loc></url>
+  <url><loc>https://choijeyoon.github.io/HUMAN/zh/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/ko/articles/idol-dating-betrayal/</loc></url>
   <url><loc>https://choijeyoon.github.io/HUMAN/ja/articles/idol-dating-betrayal/</loc></url>
 </urlset>
