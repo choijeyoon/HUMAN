@@ -4,7 +4,7 @@
   <rect width="1600" height="920" fill="#11110f"/>
   <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
     <text x="76" y="72" font-size="17" letter-spacing="4">FIG. 00 / HUMAN SYSTEMS — ROUTING MATRIX</text>
-    <text x="76" y="858" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — EDITORIAL KNOWLEDGE ARCHITECTURE, NOT EMPIRICAL DATA</text>
+    <text x="76" y="900" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — EDITORIAL KNOWLEDGE ARCHITECTURE, NOT EMPIRICAL DATA</text>
   </g>
 
   <g font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#d4948b">
@@ -13,7 +13,6 @@
     <text x="1270" y="142">FRONTIER</text>
   </g>
 
-  <!-- rules -->
   <g stroke="#5f5d57" stroke-width="1">
     <line x1="450" y1="110" x2="450" y2="790"/>
     <line x1="1190" y1="110" x2="1190" y2="790"/>
@@ -21,7 +20,6 @@
     <line x1="78" y1="790" x2="1510" y2="790"/>
   </g>
 
-  <!-- entry questions -->
   <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
     <text x="80" y="270" font-size="41">Why does rejection hurt?</text>
     <text x="80" y="430" font-size="41">Why can fandom feel personal?</text>
@@ -35,7 +33,6 @@
     <text x="82" y="782">MIND / DYNAMICS</text>
   </g>
 
-  <!-- mechanism rows -->
   <g fill="none" stroke="#b7b2a7" stroke-width="1.1">
     <rect x="520" y="220" width="560" height="74"/>
     <rect x="520" y="324" width="560" height="74"/>
@@ -58,7 +55,6 @@
     <text x="825" y="680">INTENTION / RECIPROCITY / MIND</text>
   </g>
 
-  <!-- routing lines -->
   <g fill="none" stroke="#6e211b" stroke-width="2" opacity=".95">
     <path d="M430 255 H485 V257 H520"/>
     <path d="M430 255 H475 V361 H520"/>
@@ -74,7 +70,6 @@
     <circle cx="485" cy="257" r="4"/><circle cx="475" cy="361" r="4"/><circle cx="485" cy="465" r="4"/><circle cx="480" cy="673" r="4"/>
   </g>
 
-  <!-- frontier -->
   <rect x="1260" y="220" width="250" height="490" fill="#f3f0e8"/>
   <g font-family="Helvetica,Arial,sans-serif" fill="#6e211b">
     <text x="1290" y="260" font-size="13" font-weight="700" letter-spacing="3">OPEN FRONTIER</text>
@@ -96,5 +91,5 @@
     <path d="M1080 673 H1120 V510 H1260"/>
   </g>
 
-  <text x="76" y="835" font-family="Georgia,Times New Roman,serif" font-size="38" fill="#f3f0e8">One question can route through several mechanisms before it reaches a frontier.</text>
+  <text x="76" y="846" font-family="Georgia,Times New Roman,serif" font-size="34" fill="#f3f0e8">One question can route through several mechanisms before it reaches a frontier.</text>
 </svg>
