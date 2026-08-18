@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">AI attachment conceptual figure</title>
+  <desc id="desc">A conceptual diagram separating human attachment, perceived agency and consciousness in relationships with AI.</desc>
+  <rect width="1400" height="900" fill="#11110f"/>
+  <g fill="none" stroke="#f3f0e8" stroke-width="2">
+    <circle cx="330" cy="430" r="104"/>
+    <path d="M245 595c18-88 154-88 172 0"/>
+    <rect x="870" y="260" width="260" height="340" rx="2"/>
+    <circle cx="1000" cy="350" r="26"/><circle cx="930" cy="445" r="18"/><circle cx="1070" cy="445" r="18"/><circle cx="1000" cy="525" r="18"/>
+    <path d="M1000 376v125M948 445h104M945 458l45 55M1055 458l-45 55"/>
+    <path d="M445 395 C600 315 720 315 862 385"/>
+    <path d="M445 470 C600 555 730 555 862 475"/>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M475 370 C620 250 755 250 870 335"/>
+    <path d="M475 500 C620 630 755 630 870 535"/>
+    <circle cx="650" cy="430" r="82"/><circle cx="650" cy="430" r="118" opacity=".5"/>
+  </g>
+  <g fill="#6e211b"><circle cx="650" cy="430" r="9"/></g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8" font-size="17" letter-spacing="3">
+    <text x="72" y="82">FIG. 02 / AI RELATIONSHIP STACK</text>
+    <text x="250" y="680">HUMAN</text>
+    <text x="915" y="680">RESPONSIVE SYSTEM</text>
+    <text x="560" y="402">ATTACHMENT</text>
+    <text x="552" y="454">PERCEIVED AGENCY</text>
+    <text x="548" y="506">CONSCIOUSNESS ?</text>
+    <text x="72" y="830">CONCEPTUAL FIGURE — NOT EMPIRICAL DATA</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
+    <text x="72" y="775" font-size="46">Feeling attached does not answer what the other mind is.</text>
+  </g>
+</svg>
