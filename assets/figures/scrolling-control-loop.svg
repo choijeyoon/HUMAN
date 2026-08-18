@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Scrolling control loop conceptual figure</title>
+  <desc id="desc">A conceptual state-machine separating reward-sensitive sampling, habit, personalization and stop decisions in repetitive social media scrolling.</desc>
+  <rect width="1600" height="1040" fill="#11110f"/>
+
+  <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
+    <text x="74" y="70" font-size="17" letter-spacing="4">FIG. 04 / THE SCROLLING CONTROL LOOP</text>
+    <text x="74" y="985" font-size="13" letter-spacing="3">CONCEPTUAL SYNTHESIS — NOT AN EMPIRICALLY FITTED SINGLE MECHANISM</text>
+  </g>
+
+  <g font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#d4948b">
+    <text x="90" y="150">ENTRY</text>
+    <text x="455" y="150">VALUATION LANE</text>
+    <text x="455" y="565">HABIT LANE</text>
+    <text x="1210" y="150">STOP GATE</text>
+  </g>
+
+  <g fill="none" stroke="#77736b" stroke-width="1">
+    <line x1="400" y1="115" x2="400" y2="890"/>
+    <line x1="1160" y1="115" x2="1160" y2="890"/>
+    <line x1="74" y1="900" x2="1525" y2="900"/>
+  </g>
+
+  <!-- Entry -->
+  <g fill="#f3f0e8">
+    <rect x="88" y="220" width="245" height="108"/>
+    <rect x="88" y="380" width="245" height="108"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="114" y="262" font-size="31">Cue</text>
+    <text x="114" y="298" font-size="20">boredom · notification</text>
+    <text x="114" y="422" font-size="31">Open feed</text>
+    <text x="114" y="458" font-size="20">one action starts sampling</text>
+  </g>
+  <path d="M210 328V374" stroke="#6e211b" stroke-width="2"/>
+  <path d="M210 374l-7-11h14z" fill="#d4948b"/>
+
+  <!-- Valuation lane -->
+  <g fill="none" stroke="#b7b2a7" stroke-width="1.2">
+    <rect x="455" y="210" width="285" height="110"/>
+    <rect x="805" y="210" width="285" height="110"/>
+    <rect x="625" y="385" width="300" height="118"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
+    <text x="480" y="254" font-size="31">Sample next item</text>
+    <text x="480" y="290" font-size="18" fill="#aaa69c">novelty · relevance · surprise</text>
+    <text x="830" y="254" font-size="31">Subjective value</text>
+    <text x="830" y="290" font-size="18" fill="#aaa69c">reward is variable, not constant</text>
+    <text x="653" y="432" font-size="31">Continue?</text>
+    <text x="653" y="468" font-size="18" fill="#aaa69c">another sample may be better</text>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M333 434H420V265H455"/>
+    <path d="M740 265H805"/>
+    <path d="M947 320V365H775V385"/>
+    <path d="M625 444H545V340H597V320"/>
+  </g>
+  <g fill="#d4948b">
+    <path d="M455 265l-10-6v12z"/><path d="M805 265l-10-6v12z"/><path d="M775 385l-6-10h12z"/><path d="M597 320l-6 10h12z"/>
+  </g>
+  <text x="515" y="365" font-family="Helvetica,Arial,sans-serif" fill="#d4948b" font-size="12" letter-spacing="2">SWIPE / SAMPLE AGAIN</text>
+
+  <!-- Personalization feedback -->
+  <rect x="805" y="548" width="285" height="108" fill="#f3f0e8"/>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="832" y="590" font-size="30">Recommendation updates</text>
+    <text x="832" y="626" font-size="18">your behavior changes the next sample</text>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2" stroke-dasharray="8 9">
+    <path d="M925 503V538"/>
+    <path d="M947 548V505H1080V338H1018V320"/>
+  </g>
+  <g fill="#d4948b"><path d="M925 538l-6-10h12z"/><path d="M1018 320l-10-6v12z"/></g>
+
+  <!-- Habit lane -->
+  <g fill="none" stroke="#b7b2a7" stroke-width="1.2">
+    <rect x="455" y="625" width="285" height="108"/>
+    <rect x="455" y="770" width="635" height="94"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
+    <text x="480" y="668" font-size="31">Habit strength</text>
+    <text x="480" y="704" font-size="18" fill="#aaa69c">repetition makes swiping less deliberative</text>
+    <text x="480" y="814" font-size="31">Continue without re-evaluating every item</text>
+    <text x="480" y="848" font-size="18" fill="#aaa69c">the action can persist even when value is mediocre</text>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M625 503V605H597V625"/>
+    <path d="M597 733V760"/>
+  </g>
+  <g fill="#d4948b"><path d="M597 625l-6-10h12z"/><path d="M597 760l-6-10h12z"/></g>
+
+  <!-- Stop gate -->
+  <rect x="1210" y="210" width="300" height="310" fill="#f3f0e8"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#6e211b">
+    <text x="1240" y="250" font-size="12" font-weight="700" letter-spacing="3">EXPLICIT STOP DECISION</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="1240" y="310" font-size="37">Do I keep going?</text>
+    <text x="1240" y="370" font-size="25">pagination</text>
+    <text x="1240" y="412" font-size="25">time reminder</text>
+    <text x="1240" y="454" font-size="25">end of queue</text>
+  </g>
+  <text x="1240" y="492" font-family="Helvetica,Arial,sans-serif" fill="#66625b" font-size="12" letter-spacing="2">FRICTION MAKES CONTINUATION A CHOICE AGAIN</text>
+
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M925 444H1160V365H1210"/>
+    <path d="M1090 817H1160V445H1210"/>
+  </g>
+  <g fill="#d4948b"><path d="M1210 365l-10-6v12z"/><path d="M1210 445l-10-6v12z"/></g>
+
+  <!-- Low friction strip -->
+  <rect x="1210" y="590" width="300" height="205" fill="none" stroke="#b7b2a7" stroke-width="1.2"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#d4948b">
+    <text x="1240" y="630" font-size="12" font-weight="700" letter-spacing="3">LOW-FRICTION FEED</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
+    <text x="1240" y="685" font-size="30">The next item is already</text>
+    <text x="1240" y="721" font-size="30">waiting. Continuing is</text>
+    <text x="1240" y="757" font-size="30">easier than stopping.</text>
+  </g>
+
+  <text x="74" y="950" font-family="Georgia,Times New Roman,serif" font-size="34" fill="#f3f0e8">Scrolling persists when reward-sensitive sampling and habit meet an interface with few natural stopping points.</text>
+</svg>
