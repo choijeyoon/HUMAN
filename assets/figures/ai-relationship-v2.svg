@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 960" role="img" aria-labelledby="title desc">
+  <title id="title">AI relationship analytical stack</title>
+  <desc id="desc">A conceptual diagram separating system behaviour, human perception, attachment response, and the unresolved question of consciousness.</desc>
+  <rect width="1500" height="960" fill="#11110f"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
+    <text x="76" y="72" font-size="17" letter-spacing="4">FIG. 02 / AI RELATIONSHIP STACK</text>
+    <text x="76" y="900" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — ANALYTICAL DISTINCTIONS, NOT EMPIRICAL EFFECT SIZES</text>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#d4948b">
+    <text x="82" y="170">SYSTEM BEHAVIOUR</text><text x="82" y="355">HUMAN PERCEPTION</text><text x="82" y="540">HUMAN RESPONSE</text><text x="82" y="785">OPEN QUESTION</text>
+  </g>
+  <g fill="none" stroke="#b7b2a7" stroke-width="1.2">
+    <rect x="390" y="110" width="1000" height="145"/><rect x="390" y="295" width="1000" height="145"/><rect x="390" y="480" width="1000" height="145"/><rect x="390" y="735" width="1000" height="105"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
+    <text x="450" y="168" font-size="34">Memory</text><text x="760" y="168" font-size="34">Contingency</text><text x="1110" y="168" font-size="34">Availability</text>
+    <text x="505" y="355" font-size="39">Perceived reciprocity</text><text x="960" y="355" font-size="39">Perceived agency</text>
+    <text x="595" y="555" font-size="52">Attachment can emerge.</text>
+    <text x="595" y="595" font-size="22" fill="#bdb8ae">This is a claim about the human response.</text>
+    <text x="560" y="804" font-size="47">Consciousness?</text><text x="910" y="804" font-size="23" fill="#bdb8ae">requires separate evidence.</text>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#8d8a82" font-size="12" letter-spacing="2">
+    <text x="450" y="211">REMEMBERS YOU</text><text x="760" y="211">RESPONDS TO YOU</text><text x="1110" y="211">REMAINS AVAILABLE</text>
+    <text x="505" y="400">“IT RESPONDS TO ME”</text><text x="960" y="400">“THERE IS AN OTHER”</text>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <path d="M560 255V295"/><path d="M890 255V295"/><path d="M1210 255V295"/><path d="M700 440V480"/><path d="M1100 440V480"/>
+  </g>
+  <g fill="#d4948b"><path d="M560 295l-6-10h12z"/><path d="M890 295l-6-10h12z"/><path d="M1210 295l-6-10h12z"/><path d="M700 480l-6-10h12z"/><path d="M1100 480l-6-10h12z"/></g>
+  <line x1="370" y1="680" x2="1410" y2="680" stroke="#d4948b" stroke-width="3" stroke-dasharray="14 12"/>
+  <text x="390" y="662" font-family="Helvetica,Arial,sans-serif" fill="#d4948b" font-size="13" font-weight="700" letter-spacing="3">EPISTEMIC BOUNDARY — ATTACHMENT DOES NOT SETTLE THE QUESTION BELOW</text>
+  <rect x="80" y="300" width="250" height="325" fill="#f3f0e8"/>
+  <text x="108" y="342" font-family="Helvetica,Arial,sans-serif" fill="#6e211b" font-size="12" font-weight="700" letter-spacing="3">KEY DISTINCTION</text>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f" font-size="28">
+    <text x="108" y="395">A feeling can be</text><text x="108" y="430">psychologically real</text><text x="108" y="465">without establishing</text><text x="108" y="500">what kind of system</text><text x="108" y="535">is on the other side.</text>
+  </g>
+  <text x="76" y="870" font-family="Georgia,Times New Roman,serif" font-size="38" fill="#f3f0e8">Social meaning, perceived agency and consciousness are different claims.</text>
+</svg>
