@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">AI companion evidence map</title>
+  <desc id="desc">Three-study evidence map distinguishing experimental social connection, interpersonal closeness, and observational well-being findings in human-AI interaction research.</desc>
+  <rect width="1600" height="1040" fill="#f3f0e8"/>
+
+  <g font-family="Helvetica,Arial,sans-serif" fill="#11110f">
+    <text x="74" y="70" font-size="17" letter-spacing="4">FIG. 03 / WHAT HAS ACTUALLY BEEN MEASURED?</text>
+    <text x="74" y="982" font-size="13" letter-spacing="3">EMPIRICAL STUDIES — STUDY DESIGNS AND INFERENCES ARE KEPT SEPARATE</text>
+  </g>
+
+  <g stroke="#9f9a90" stroke-width="1">
+    <line x1="74" y1="120" x2="1526" y2="120"/>
+    <line x1="74" y1="900" x2="1526" y2="900"/>
+    <line x1="545" y1="120" x2="545" y2="900"/>
+    <line x1="1040" y1="120" x2="1040" y2="900"/>
+  </g>
+
+  <g font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#6e211b">
+    <text x="95" y="165">01 / SHORT EXPERIMENT</text>
+    <text x="570" y="165">02 / RELATIONSHIP-BUILDING RCT</text>
+    <text x="1065" y="165">03 / REAL-WORLD USERS</text>
+  </g>
+
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="95" y="225" font-size="36">Folk et al.</text>
+    <text x="95" y="265" font-size="22">Scientific Reports · 2025</text>
+    <text x="570" y="225" font-size="36">Kleinert et al.</text>
+    <text x="570" y="265" font-size="22">Communications Psychology · 2026</text>
+    <text x="1065" y="225" font-size="36">Zhang et al.</text>
+    <text x="1065" y="265" font-size="22">Nature Human Behaviour · 2026</text>
+  </g>
+
+  <g fill="#11110f">
+    <rect x="95" y="315" width="370" height="105"/>
+    <rect x="570" y="315" width="390" height="105"/>
+    <rect x="1065" y="315" width="390" height="105"/>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
+    <text x="120" y="350" font-size="12" letter-spacing="3">SAMPLE</text>
+    <text x="120" y="395" font-family="Georgia,Times New Roman,serif" font-size="34">N = 1,274</text>
+    <text x="595" y="350" font-size="12" letter-spacing="3">SAMPLE</text>
+    <text x="595" y="395" font-family="Georgia,Times New Roman,serif" font-size="34">N = 492</text>
+    <text x="1090" y="350" font-size="12" letter-spacing="3">SAMPLE</text>
+    <text x="1090" y="395" font-family="Georgia,Times New Roman,serif" font-size="34">N = 1,131</text>
+  </g>
+
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#6e211b">
+    <text x="95" y="485">WHAT WAS TESTED</text>
+    <text x="570" y="485">WHAT WAS TESTED</text>
+    <text x="1065" y="485">WHAT WAS TESTED</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f" font-size="27">
+    <text x="95" y="535">6-minute chatbot</text>
+    <text x="95" y="570">conversation vs journaling;</text>
+    <text x="95" y="605">anthropomorphism measured.</text>
+
+    <text x="570" y="535">Deep-talk / small-talk</text>
+    <text x="570" y="570">with AI- or human-generated</text>
+    <text x="570" y="605">partners and source labels.</text>
+
+    <text x="1065" y="535">Character.AI users, surveys</text>
+    <text x="1065" y="570">plus donated chat histories;</text>
+    <text x="1065" y="605">well-being associations.</text>
+  </g>
+
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#6e211b">
+    <text x="95" y="675">SUPPORTED INFERENCE</text>
+    <text x="570" y="675">SUPPORTED INFERENCE</text>
+    <text x="1065" y="675">SUPPORTED INFERENCE</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f" font-size="27">
+    <text x="95" y="725">Some people feel more</text>
+    <text x="95" y="760">socially connected after AI;</text>
+    <text x="95" y="795">anthropomorphism matters.</text>
+
+    <text x="570" y="725">AI can generate interpersonal</text>
+    <text x="570" y="760">closeness; an AI label reduces</text>
+    <text x="570" y="795">but does not erase it.</text>
+
+    <text x="1065" y="725">Companionship use and</text>
+    <text x="1065" y="760">well-being are not uniformly</text>
+    <text x="1065" y="795">positive; context matters.</text>
+  </g>
+
+  <g fill="#6e211b">
+    <rect x="95" y="842" width="370" height="4"/>
+    <rect x="570" y="842" width="390" height="4"/>
+    <rect x="1065" y="842" width="390" height="4"/>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" letter-spacing="2" fill="#66625b">
+    <text x="95" y="875">CAUSAL: IMMEDIATE CONNECTION</text>
+    <text x="570" y="875">CAUSAL: SHORT-TERM CLOSENESS</text>
+    <text x="1065" y="875">OBSERVATIONAL: NO CAUSAL CLAIM</text>
+  </g>
+
+  <text x="74" y="945" font-family="Georgia,Times New Roman,serif" font-size="34" fill="#11110f">The evidence supports human attachment responses more strongly than claims about long-term benefit—or machine consciousness.</text>
+</svg>
