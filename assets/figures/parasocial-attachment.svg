@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Parasocial attachment conceptual figure</title>
+  <desc id="desc">A conceptual diagram of repeated exposure, familiarity, prediction and identity in a one-sided mediated bond.</desc>
+  <rect width="1400" height="900" fill="#f3f0e8"/>
+  <g fill="none" stroke="#11110f" stroke-width="2">
+    <circle cx="330" cy="420" r="118"/>
+    <path d="M270 446c20 42 98 42 120 0M290 385h1M370 385h1"/>
+    <rect x="850" y="235" width="330" height="360"/>
+    <circle cx="1015" cy="380" r="74"/>
+    <path d="M965 408c18 28 78 28 98 0M982 356h1M1048 356h1"/>
+    <path d="M462 420 C610 330 695 330 845 390" stroke-dasharray="8 12"/>
+    <path d="M462 454 C610 548 695 548 845 462" stroke-dasharray="8 12"/>
+    <path d="M505 275 C655 205 740 208 842 292" opacity=".45"/>
+    <path d="M508 600 C650 670 752 660 845 563" opacity=".45"/>
+  </g>
+  <g fill="none" stroke="#6e211b" stroke-width="2">
+    <circle cx="330" cy="420" r="154"/><circle cx="330" cy="420" r="184" opacity=".45"/>
+    <circle cx="1015" cy="380" r="112"/><circle cx="1015" cy="380" r="145" opacity=".45"/>
+    <path d="M520 420 H825"/>
+  </g>
+  <g fill="#6e211b"><circle cx="520" cy="420" r="8"/><circle cx="665" cy="420" r="8"/><circle cx="825" cy="420" r="8"/></g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#11110f" font-size="17" letter-spacing="3">
+    <text x="70" y="82">FIG. 01 / PARASOCIAL ATTACHMENT</text>
+    <text x="250" y="660">SELF</text>
+    <text x="943" y="660">MEDIATED FIGURE</text>
+    <text x="525" y="390">EXPOSURE</text>
+    <text x="632" y="390">FAMILIARITY</text>
+    <text x="752" y="390">PREDICTION</text>
+    <text x="70" y="830">CONCEPTUAL FIGURE — NOT EMPIRICAL DATA</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="70" y="775" font-size="48">One-sided does not mean psychologically empty.</text>
+  </g>
+</svg>
