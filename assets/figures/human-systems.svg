@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+  <title id="title">Human systems conceptual figure</title>
+  <desc id="desc">An abstract editorial network linking attachment, prediction, identity, agency and consciousness.</desc>
+  <rect width="1600" height="920" fill="#11110f"/>
+  <g fill="none" stroke="#d8d3c8" stroke-width="1.5" opacity=".78">
+    <ellipse cx="790" cy="455" rx="395" ry="245"/>
+    <ellipse cx="790" cy="455" rx="292" ry="355" transform="rotate(24 790 455)"/>
+    <ellipse cx="790" cy="455" rx="292" ry="355" transform="rotate(-24 790 455)"/>
+    <path d="M348 460 C510 270 640 218 792 455 C945 692 1080 650 1240 455"/>
+    <path d="M345 455 C508 640 642 698 790 455 C940 210 1086 258 1240 455"/>
+    <path d="M790 122 C705 260 690 342 790 455 C890 568 878 672 790 790"/>
+  </g>
+  <g fill="#f3f0e8">
+    <circle cx="455" cy="357" r="7"/><circle cx="592" cy="232" r="7"/><circle cx="790" cy="455" r="9"/><circle cx="1012" cy="298" r="7"/><circle cx="1168" cy="462" r="7"/><circle cx="966" cy="650" r="7"/><circle cx="612" cy="666" r="7"/>
+  </g>
+  <g fill="#6e211b">
+    <circle cx="455" cy="357" r="18" opacity=".9"/><circle cx="1012" cy="298" r="18" opacity=".9"/><circle cx="966" cy="650" r="18" opacity=".9"/>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="18" letter-spacing="4" fill="#d8d3c8">
+    <text x="95" y="115">FIG. 00 / HUMAN SYSTEMS</text>
+    <text x="95" y="815">CONCEPTUAL / NOT EMPIRICAL DATA</text>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" font-size="17" letter-spacing="3" fill="#f3f0e8">
+    <text x="365" y="325">ATTACHMENT</text>
+    <text x="505" y="200">PREDICTION</text>
+    <text x="1044" y="268">IDENTITY</text>
+    <text x="1198" y="435">AGENCY</text>
+    <text x="1000" y="705">CONSCIOUSNESS</text>
+    <text x="500" y="722">REWARD</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
+    <text x="95" y="875" font-size="52">One question rarely belongs to one system.</text>
+  </g>
+</svg>
