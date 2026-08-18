@@ -4,7 +4,7 @@
   <rect width="1500" height="960" fill="#11110f"/>
   <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
     <text x="76" y="72" font-size="17" letter-spacing="4">FIG. 02 / AI RELATIONSHIP STACK</text>
-    <text x="76" y="900" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — ANALYTICAL DISTINCTIONS, NOT EMPIRICAL EFFECT SIZES</text>
+    <text x="76" y="940" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — ANALYTICAL DISTINCTIONS, NOT EMPIRICAL EFFECT SIZES</text>
   </g>
   <g font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#d4948b">
     <text x="82" y="170">SYSTEM BEHAVIOUR</text><text x="82" y="355">HUMAN PERCEPTION</text><text x="82" y="540">HUMAN RESPONSE</text><text x="82" y="785">OPEN QUESTION</text>
@@ -34,5 +34,5 @@
   <g font-family="Georgia,Times New Roman,serif" fill="#11110f" font-size="28">
     <text x="108" y="395">A feeling can be</text><text x="108" y="430">psychologically real</text><text x="108" y="465">without establishing</text><text x="108" y="500">what kind of system</text><text x="108" y="535">is on the other side.</text>
   </g>
-  <text x="76" y="870" font-family="Georgia,Times New Roman,serif" font-size="38" fill="#f3f0e8">Social meaning, perceived agency and consciousness are different claims.</text>
+  <text x="76" y="884" font-family="Georgia,Times New Roman,serif" font-size="34" fill="#f3f0e8">Social meaning, perceived agency and consciousness are different claims.</text>
 </svg>
