@@ -24,6 +24,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Restore and validate ultra-resolution cover
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 --decode assets/cover-ultra/01.b64 > assets/images/issue-001-cover-ultra.jpg
+          file assets/images/issue-001-cover-ultra.jpg
+          file assets/images/issue-001-cover-ultra.jpg | grep -q 'JPEG image data'
+          file assets/images/issue-001-cover-ultra.jpg | grep -q '1536x1024'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload site
