@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://choijeyoon.github.io/HUMAN/sitemap.xml
