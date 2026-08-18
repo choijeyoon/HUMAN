@@ -24,14 +24,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Restore and validate ultra-resolution cover
+      - name: Restore and verify ultra-resolution cover
         shell: bash
         run: |
           set -euo pipefail
-          base64 --decode assets/cover-ultra/01.b64 > assets/images/issue-001-cover-ultra.jpg
-          file assets/images/issue-001-cover-ultra.jpg
-          file assets/images/issue-001-cover-ultra.jpg | grep -q 'JPEG image data'
-          file assets/images/issue-001-cover-ultra.jpg | grep -q '1536x1024'
+          cat assets/cover-ultra-v2/*.part | base64 --decode > assets/images/issue-001-cover-ultra-v2.avif
+          test "$(stat -c%s assets/images/issue-001-cover-ultra-v2.avif)" -eq 148491
+          echo "a7081b1bce4c2e11c1758806bb3e1db67f4e37a6480bbfa3fc8e654a52ca7d99  assets/images/issue-001-cover-ultra-v2.avif" | sha256sum -c -
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload site
