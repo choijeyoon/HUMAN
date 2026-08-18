@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#f3f0e8">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/editions.css">
 </head>
 <body>
   <div class="wrap">
@@ -27,29 +28,50 @@
         <div class="hero-note">Five language editions · One connected knowledge system</div>
       </section>
 
-      <section class="section" id="language-map">
+      <section class="section editions-section" id="editions">
         <div class="section-head">
           <div class="eyebrow">Global Editions</div>
-          <div><h2>Choose an edition through the atlas.</h2><p class="section-deck">Hover a marked region to reveal its language edition. The questions are shared; the cultural framing is not.</p></div>
-        </div>
-        <div class="language-stage">
-          <div class="world-map" aria-label="Language atlas">
-            <svg class="world-silhouette" viewBox="0 0 1000 520" aria-hidden="true">
-              <path d="M77 117c28-37 76-56 129-49 39 5 68 24 91 49 19 21 48 25 64 44 15 18 8 43-18 54-28 12-46 39-65 60-18 20-48 28-72 16-23-12-33-39-51-55-17-15-45-18-59-39-16-24-39-48-19-80z"/>
-              <path d="M255 291c28-12 70 3 84 32 11 23 2 48-7 70-12 28-27 58-55 74-17 10-38 5-44-14-7-23 10-48 6-72-5-28-31-52-20-76 6-13 20-9 36-14z"/>
-              <path d="M401 132c27-18 66-24 103-14 25 7 50 5 72 17 19 11 25 29 15 44-11 17-37 18-57 25-25 8-43 28-68 30-27 2-43-20-67-25-20-4-44-6-52-23-10-22 24-39 54-54z"/>
-              <path d="M476 228c33-20 72-4 89 26 16 29 11 67 2 99-10 35-32 75-65 88-29 11-49-21-59-45-11-26-23-54-19-82 3-26 25-47 35-70 5-9 8-12 17-16z"/>
-              <path d="M553 112c57-35 141-48 218-29 45 11 82 35 126 43 39 7 58 27 49 49-10 24-51 25-80 36-34 13-56 40-91 50-39 11-79-10-119-4-30 5-55 31-86 26-29-4-56-29-78-48-21-18-25-43-10-62 17-22 42-43 71-61z"/>
-              <path d="M821 337c24-18 62-19 88-4 23 13 39 37 30 55-10 20-43 24-67 31-24 7-54 5-70-12-18-19-4-51 19-70z"/>
-              <path d="M902 224c15-8 32-4 41 5 8 8 6 19-5 24-14 6-36 1-44-7-8-8-3-16 8-22z"/>
-            </svg>
-            <a class="language-node en" href="en/"><span class="language-card"><strong>English</strong><small>Global Edition</small></span></a>
-            <a class="language-node es" href="es/"><span class="language-card"><strong>Español</strong><small>Edición Global</small></span></a>
-            <a class="language-node ko" href="ko/"><span class="language-card"><strong>한국어</strong><small>한국어판</small></span></a>
-            <a class="language-node ja" href="ja/"><span class="language-card"><strong>日本語</strong><small>日本語版</small></span></a>
-            <a class="language-node zh" href="zh/"><span class="language-card"><strong>中文</strong><small>中文版</small></span></a>
+          <div>
+            <h2>Choose your edition.</h2>
+            <p class="section-deck">No flags, no decorative map. The same human questions move across languages; the cultural framing changes with them.</p>
           </div>
-          <div class="map-caption"><span><strong>Hover / focus</strong> to enter an edition.</span><span>Human questions travel. Context changes them.</span></div>
+        </div>
+
+        <div class="edition-spread" aria-label="Language editions">
+          <a class="edition-row" href="en/">
+            <span class="edition-no">01</span>
+            <span class="edition-name">English</span>
+            <span class="edition-meta">Global Edition<br><span class="edition-script">English</span></span>
+            <span class="edition-arrow">↗</span>
+          </a>
+          <a class="edition-row" href="ko/">
+            <span class="edition-no">02</span>
+            <span class="edition-name">한국어</span>
+            <span class="edition-meta">Korean Edition<br><span class="edition-script">Human Science / Korea</span></span>
+            <span class="edition-arrow">↗</span>
+          </a>
+          <a class="edition-row" href="ja/">
+            <span class="edition-no">03</span>
+            <span class="edition-name">日本語</span>
+            <span class="edition-meta">Japanese Edition<br><span class="edition-script">Human Science / Japan</span></span>
+            <span class="edition-arrow">↗</span>
+          </a>
+          <a class="edition-row" href="zh/">
+            <span class="edition-no">04</span>
+            <span class="edition-name">中文</span>
+            <span class="edition-meta">Chinese Edition<br><span class="edition-script">Human Science / Chinese</span></span>
+            <span class="edition-arrow">↗</span>
+          </a>
+          <a class="edition-row" href="es/">
+            <span class="edition-no">05</span>
+            <span class="edition-name">Español</span>
+            <span class="edition-meta">Spanish Edition<br><span class="edition-script">Human Science / Español</span></span>
+            <span class="edition-arrow">↗</span>
+          </a>
+        </div>
+        <div class="edition-legend">
+          <span><strong>Hover / focus</strong> to open an edition.</span>
+          <span>Language is treated as an editorial lens, not merely a translation setting.</span>
         </div>
       </section>
 
