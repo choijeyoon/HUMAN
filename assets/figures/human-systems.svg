@@ -1,34 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
-  <title id="title">Human systems conceptual figure</title>
-  <desc id="desc">An abstract editorial network linking attachment, prediction, identity, agency and consciousness.</desc>
+  <title id="title">Human systems routing matrix conceptual figure</title>
+  <desc id="desc">A structured editorial diagram routing common human questions through multiple psychological and neural mechanisms toward broader frontier questions.</desc>
   <rect width="1600" height="920" fill="#11110f"/>
-  <g fill="none" stroke="#d8d3c8" stroke-width="1.5" opacity=".78">
-    <ellipse cx="790" cy="455" rx="395" ry="245"/>
-    <ellipse cx="790" cy="455" rx="292" ry="355" transform="rotate(24 790 455)"/>
-    <ellipse cx="790" cy="455" rx="292" ry="355" transform="rotate(-24 790 455)"/>
-    <path d="M348 460 C510 270 640 218 792 455 C945 692 1080 650 1240 455"/>
-    <path d="M345 455 C508 640 642 698 790 455 C940 210 1086 258 1240 455"/>
-    <path d="M790 122 C705 260 690 342 790 455 C890 568 878 672 790 790"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#f3f0e8">
+    <text x="76" y="72" font-size="17" letter-spacing="4">FIG. 00 / HUMAN SYSTEMS — ROUTING MATRIX</text>
+    <text x="76" y="900" font-size="14" letter-spacing="3">CONCEPTUAL FIGURE — EDITORIAL KNOWLEDGE ARCHITECTURE, NOT EMPIRICAL DATA</text>
   </g>
-  <g fill="#f3f0e8">
-    <circle cx="455" cy="357" r="7"/><circle cx="592" cy="232" r="7"/><circle cx="790" cy="455" r="9"/><circle cx="1012" cy="298" r="7"/><circle cx="1168" cy="462" r="7"/><circle cx="966" cy="650" r="7"/><circle cx="612" cy="666" r="7"/>
+
+  <g font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#d4948b">
+    <text x="78" y="142">ENTRY QUESTIONS</text>
+    <text x="530" y="142">MECHANISMS</text>
+    <text x="1270" y="142">FRONTIER</text>
   </g>
-  <g fill="#6e211b">
-    <circle cx="455" cy="357" r="18" opacity=".9"/><circle cx="1012" cy="298" r="18" opacity=".9"/><circle cx="966" cy="650" r="18" opacity=".9"/>
+
+  <g stroke="#5f5d57" stroke-width="1">
+    <line x1="450" y1="110" x2="450" y2="790"/>
+    <line x1="1190" y1="110" x2="1190" y2="790"/>
+    <line x1="78" y1="190" x2="1510" y2="190"/>
+    <line x1="78" y1="790" x2="1510" y2="790"/>
   </g>
-  <g font-family="Helvetica,Arial,sans-serif" font-size="18" letter-spacing="4" fill="#d8d3c8">
-    <text x="95" y="115">FIG. 00 / HUMAN SYSTEMS</text>
-    <text x="95" y="815">CONCEPTUAL / NOT EMPIRICAL DATA</text>
-  </g>
-  <g font-family="Helvetica,Arial,sans-serif" font-size="17" letter-spacing="3" fill="#f3f0e8">
-    <text x="365" y="325">ATTACHMENT</text>
-    <text x="505" y="200">PREDICTION</text>
-    <text x="1044" y="268">IDENTITY</text>
-    <text x="1198" y="435">AGENCY</text>
-    <text x="1000" y="705">CONSCIOUSNESS</text>
-    <text x="500" y="722">REWARD</text>
-  </g>
+
   <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8">
-    <text x="95" y="875" font-size="52">One question rarely belongs to one system.</text>
+    <text x="80" y="270" font-size="41">Why does rejection hurt?</text>
+    <text x="80" y="430" font-size="41">Why can fandom feel personal?</text>
+    <text x="80" y="590" font-size="41">Could you love an AI?</text>
+    <text x="80" y="750" font-size="41">Why are you conscious?</text>
   </g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#8d8a82" font-size="13" letter-spacing="2">
+    <text x="82" y="302">LOVE / LOSS</text>
+    <text x="82" y="462">CULTURE / IDENTITY</text>
+    <text x="82" y="622">AI / SOCIAL COGNITION</text>
+    <text x="82" y="782">MIND / DYNAMICS</text>
+  </g>
+
+  <g fill="none" stroke="#b7b2a7" stroke-width="1.1">
+    <rect x="520" y="220" width="560" height="74"/>
+    <rect x="520" y="324" width="560" height="74"/>
+    <rect x="520" y="428" width="560" height="74"/>
+    <rect x="520" y="532" width="560" height="74"/>
+    <rect x="520" y="636" width="560" height="74"/>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#f3f0e8" font-size="31">
+    <text x="548" y="266">Attachment</text>
+    <text x="548" y="370">Prediction</text>
+    <text x="548" y="474">Identity</text>
+    <text x="548" y="578">Reward</text>
+    <text x="548" y="682">Agency</text>
+  </g>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#8d8a82" font-size="12" letter-spacing="2">
+    <text x="825" y="264">BELONGING / LOSS / SECURITY</text>
+    <text x="825" y="368">EXPECTATION / UPDATE / UNCERTAINTY</text>
+    <text x="825" y="472">SELF / GROUP / NORM</text>
+    <text x="825" y="576">VALUE / MOTIVATION / REINFORCEMENT</text>
+    <text x="825" y="680">INTENTION / RECIPROCITY / MIND</text>
+  </g>
+
+  <g fill="none" stroke="#6e211b" stroke-width="2" opacity=".95">
+    <path d="M430 255 H485 V257 H520"/>
+    <path d="M430 255 H475 V361 H520"/>
+    <path d="M430 415 H465 V257 H520"/>
+    <path d="M430 415 H485 V465 H520"/>
+    <path d="M430 415 H495 V361 H520"/>
+    <path d="M430 575 H470 V257 H520"/>
+    <path d="M430 575 H480 V673 H520"/>
+    <path d="M430 575 H490 V361 H520"/>
+    <path d="M430 735 H500 V673 H520"/>
+  </g>
+  <g fill="#d4948b">
+    <circle cx="485" cy="257" r="4"/><circle cx="475" cy="361" r="4"/><circle cx="485" cy="465" r="4"/><circle cx="480" cy="673" r="4"/>
+  </g>
+
+  <rect x="1260" y="220" width="250" height="490" fill="#f3f0e8"/>
+  <g font-family="Helvetica,Arial,sans-serif" fill="#6e211b">
+    <text x="1290" y="260" font-size="13" font-weight="700" letter-spacing="3">OPEN FRONTIER</text>
+  </g>
+  <g font-family="Georgia,Times New Roman,serif" fill="#11110f">
+    <text x="1290" y="334" font-size="39">What kind</text>
+    <text x="1290" y="378" font-size="39">of system</text>
+    <text x="1290" y="422" font-size="39">produces a</text>
+    <text x="1290" y="466" font-size="39">human mind?</text>
+    <text x="1290" y="548" font-size="23">Consciousness</text>
+    <text x="1290" y="585" font-size="23">Social meaning</text>
+    <text x="1290" y="622" font-size="23">Culture</text>
+    <text x="1290" y="659" font-size="23">Technology</text>
+  </g>
+  <g fill="none" stroke="#d4948b" stroke-width="2">
+    <path d="M1080 257 H1150 V330 H1260"/>
+    <path d="M1080 361 H1140 V390 H1260"/>
+    <path d="M1080 465 H1130 V450 H1260"/>
+    <path d="M1080 673 H1120 V510 H1260"/>
+  </g>
+
+  <text x="76" y="846" font-family="Georgia,Times New Roman,serif" font-size="34" fill="#f3f0e8">One question can route through several mechanisms before it reaches a frontier.</text>
 </svg>
