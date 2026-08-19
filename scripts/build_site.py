@@ -8,6 +8,7 @@ BASE = "https://choijeyoon.github.io/HUMAN"
 COVER_WEBP = "assets/images/issue-001-cover-4k-v2.webp?v=20260819-launch2"
 COVER_JPG = "assets/images/issue-001-cover-4k-v2.jpg?v=20260819-launch2"
 COVER_JPG_ABS = f"{BASE}/assets/images/issue-001-cover-4k-v2.jpg?v=20260819-launch2"
+OPENING_VERSION = "v=20260819-opening1"
 
 
 def read(path: str) -> str:
@@ -22,6 +23,52 @@ def replace_once(text: str, old: str, new: str, label: str) -> str:
     if old not in text:
         raise RuntimeError(f"Expected markup not found for {label}")
     return text.replace(old, new, 1)
+
+
+ARTICLES = [
+    {
+        "path": "en/articles/idol-dating-betrayal/index.html",
+        "href": "en/articles/idol-dating-betrayal/",
+        "slug": "idol-dating-betrayal",
+        "feature_id": "feature-001",
+        "title": "Why Does Idol Dating Feel Like Betrayal?",
+        "description": "A rigorous guide to parasocial relationships, fandom identity and why idol dating news can feel unexpectedly personal.",
+        "section": "Culture × Attachment",
+        "keywords": ["parasocial relationships", "K-pop", "fandom", "social cognition", "attachment"],
+        "opening_class": "opening--kpop",
+        "opening_asset": "assets/openings-v4/idol-dating-opening-v4.svg",
+        "opening_alt": "Editorial illustration of a performer under stage light above a dense audience, representing mediated intimacy.",
+        "opening_title": "Mediated intimacy becomes psychologically real before it becomes reciprocal.",
+    },
+    {
+        "path": "en/articles/ai-love/index.html",
+        "href": "en/articles/ai-love/",
+        "slug": "ai-love",
+        "feature_id": "feature-002",
+        "title": "Could You Really Fall in Love With an AI?",
+        "description": "What experiments, longitudinal studies and real AI-companion users tell us about attachment, closeness, anthropomorphism and the limits of human-AI relationships.",
+        "section": "AI × Human Connection",
+        "keywords": ["AI companions", "attachment", "anthropomorphism", "human-AI interaction", "consciousness"],
+        "opening_class": "opening--ai",
+        "opening_asset": "assets/openings-v4/ai-love-opening-v4.svg",
+        "opening_alt": "Editorial illustration of a human profile facing a translucent artificial presence across a narrow boundary.",
+        "opening_title": "A human bond can be measurable without settling what the machine is.",
+    },
+    {
+        "path": "en/articles/scrolling/index.html",
+        "href": "en/articles/scrolling/",
+        "slug": "scrolling",
+        "feature_id": "feature-003",
+        "title": "Why Can’t We Stop Scrolling?",
+        "description": "A rigorous guide to reward learning, habit, anticipation, personalization, boredom and interface friction behind repetitive social-media scrolling.",
+        "section": "Attention × Digital Behavior",
+        "keywords": ["scrolling", "reinforcement learning", "habit", "attention", "social media"],
+        "opening_class": "opening--scrolling",
+        "opening_asset": "assets/openings-v4/scrolling-opening-v4.svg",
+        "opening_alt": "Editorial illustration of a person in a dark room facing a glowing phone beneath repeated feed layers.",
+        "opening_title": "The next swipe is easy; stopping requires a decision point.",
+    },
+]
 
 
 def build_homepage() -> None:
@@ -65,51 +112,30 @@ def build_homepage() -> None:
         if old in s:
             s = s.replace(old, new, 1)
 
+    for article in ARTICLES:
+        anchor = f'<a class="issue-feature" data-track="{article["feature_id"]}" href="{article["href"]}">'
+        if anchor not in s:
+            raise RuntimeError(f"Homepage card anchor not found for {article['slug']}")
+        if article["opening_asset"] not in s:
+            art = (
+                '<span class="feature-art-shell" aria-hidden="true">'
+                f'<img class="feature-art" src="{article["opening_asset"]}?{OPENING_VERSION}" width="1000" height="1800" loading="lazy" decoding="async" alt="">'
+                '</span>'
+            )
+            s = s.replace(anchor, anchor + art, 1)
+
     write(path, s)
-
-
-ARTICLES = [
-    {
-        "path": "en/articles/idol-dating-betrayal/index.html",
-        "slug": "idol-dating-betrayal",
-        "title": "Why Does Idol Dating Feel Like Betrayal?",
-        "description": "A rigorous guide to parasocial relationships, fandom identity and why idol dating news can feel unexpectedly personal.",
-        "section": "Culture × Attachment",
-        "keywords": ["parasocial relationships", "K-pop", "fandom", "social cognition", "attachment"],
-        "opening_class": "opening--kpop",
-        "opening_title": "Mediated intimacy becomes psychologically real before it becomes reciprocal.",
-    },
-    {
-        "path": "en/articles/ai-love/index.html",
-        "slug": "ai-love",
-        "title": "Could You Really Fall in Love With an AI?",
-        "description": "What experiments, longitudinal studies and real AI-companion users tell us about attachment, closeness, anthropomorphism and the limits of human-AI relationships.",
-        "section": "AI × Human Connection",
-        "keywords": ["AI companions", "attachment", "anthropomorphism", "human-AI interaction", "consciousness"],
-        "opening_class": "opening--ai",
-        "opening_title": "A human bond can be measurable without settling what the machine is.",
-    },
-    {
-        "path": "en/articles/scrolling/index.html",
-        "slug": "scrolling",
-        "title": "Why Can’t We Stop Scrolling?",
-        "description": "A rigorous guide to reward learning, habit, anticipation, personalization, boredom and interface friction behind repetitive social-media scrolling.",
-        "section": "Attention × Digital Behavior",
-        "keywords": ["scrolling", "reinforcement learning", "habit", "attention", "social media"],
-        "opening_class": "opening--scrolling",
-        "opening_title": "The next swipe is easy; stopping requires a decision point.",
-    },
-]
 
 
 def seo_block(article: dict) -> str:
     url = f"{BASE}/en/articles/{article['slug']}/"
+    opening_abs = f"{BASE}/{article['opening_asset']}?{OPENING_VERSION}"
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": article["title"],
         "description": article["description"],
-        "image": [COVER_JPG_ABS],
+        "image": [opening_abs, COVER_JPG_ABS],
         "datePublished": "2026-08-18",
         "dateModified": "2026-08-19",
         "inLanguage": "en",
@@ -140,13 +166,17 @@ def seo_block(article: dict) -> str:
 
 
 def opening_block(article: dict) -> str:
+    src = f"../../../{article['opening_asset']}?{OPENING_VERSION}"
     return f'''\n\n    <!-- HUMAN_ARTICLE_OPENING -->
     <figure class="article-opening-visual {article['opening_class']}">
-      <picture>
-        <source srcset="../../../{COVER_WEBP}" type="image/webp">
-        <img src="../../../{COVER_JPG}" width="4096" height="2730" loading="eager" alt="Editorial illustration for {article['title']}">
-      </picture>
-      <figcaption><span>OPENING IMAGE / EDITORIAL ILLUSTRATION</span><span>{article['opening_title']}</span><span>Not empirical data</span></figcaption>
+      <div class="article-opening-art">
+        <img src="{src}" width="1000" height="1800" loading="eager" fetchpriority="high" alt="{article['opening_alt']}">
+      </div>
+      <figcaption class="article-opening-copy">
+        <span class="opening-label">Editorial illustration / Feature opening</span>
+        <strong>{article['opening_title']}</strong>
+        <span class="opening-note">Not empirical data</span>
+      </figcaption>
     </figure>
     <div class="article-reading-map" aria-label="How this feature is structured">
       <span><small>01</small><strong>Question</strong></span>
@@ -199,12 +229,15 @@ def validate() -> None:
     home = read("index.html")
     assert "issue-001-cover-4k-v2.webp?v=20260819-launch2" in home
     assert home.count("feature-cta") == 3
+    assert home.count("feature-art-shell") == 3
     for article in ARTICLES:
+        assert article["opening_asset"] in home
         s = read(article["path"])
         assert "HUMAN_ARTICLE_SEO" in s
         assert "HUMAN_ARTICLE_OPENING" in s
         assert f'{BASE}/en/articles/{article["slug"]}/' in s
         assert '"@type":"Article"' in s
+        assert article["opening_asset"] in s
 
 
 if __name__ == "__main__":
