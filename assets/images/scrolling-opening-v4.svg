@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1800" role="img" aria-labelledby="title desc">
+<title id="title">Endless scrolling in a dark room</title><desc id="desc">A solitary person lit by a phone sits before a night city while translucent feed cards repeat upward, suggesting frictionless continuation and fragmented attention.</desc>
+<defs>
+  <linearGradient id="night" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#080b10"/><stop offset=".5" stop-color="#101b27"/><stop offset="1" stop-color="#1b0f18"/></linearGradient>
+  <linearGradient id="window" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#132638"/><stop offset="1" stop-color="#070a10"/></linearGradient>
+  <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4e6d7"/><stop offset=".45" stop-color="#aac3d2"/><stop offset="1" stop-color="#5c7587"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
+  <pattern id="city" width="88" height="116" patternUnits="userSpaceOnUse"><rect x="5" y="18" width="28" height="98" fill="#0c151e"/><rect x="41" y="0" width="38" height="116" fill="#101d28"/><g fill="#d5c7aa" opacity=".5"><rect x="13" y="36" width="5" height="8"/><rect x="22" y="52" width="5" height="8"/><rect x="51" y="22" width="6" height="8"/><rect x="64" y="68" width="6" height="8"/><rect x="51" y="92" width="6" height="8"/></g></pattern>
+</defs>
+<rect width="1000" height="1800" fill="url(#night)"/>
+<!-- window and city -->
+<rect x="96" y="110" width="808" height="1120" rx="8" fill="url(#window)" stroke="#314252" stroke-width="3"/>
+<rect x="110" y="125" width="780" height="1088" fill="url(#city)" opacity=".9"/>
+<line x1="500" y1="110" x2="500" y2="1230" stroke="#314252" stroke-width="5"/><line x1="96" y1="670" x2="904" y2="670" stroke="#314252" stroke-width="5"/>
+<ellipse cx="510" cy="1020" rx="340" ry="260" fill="#6c8ea3" opacity=".08" filter="url(#soft)"/>
+<!-- floating feed cards -->
+<g opacity=".7" fill="#0f1821" stroke="#88a0ae" stroke-width="1.4"><rect x="612" y="205" width="210" height="305" rx="18"/><rect x="158" y="320" width="195" height="282" rx="18"/><rect x="655" y="615" width="192" height="278" rx="18"/><rect x="214" y="700" width="175" height="250" rx="18"/></g>
+<g opacity=".6"><rect x="635" y="240" width="164" height="94" rx="8" fill="#304452"/><circle cx="653" cy="374" r="10" fill="#9db4bf"/><rect x="674" y="367" width="92" height="7" rx="3" fill="#d8e0e3"/><rect x="674" y="386" width="70" height="5" rx="2" fill="#78909d"/><rect x="181" y="354" width="149" height="84" rx="8" fill="#3b2731"/><circle cx="198" cy="472" r="10" fill="#c0aab2"/><rect x="220" y="466" width="78" height="7" rx="3" fill="#ddd2d4"/><rect x="220" y="485" width="58" height="5" rx="2" fill="#8f7c84"/><rect x="677" y="649" width="148" height="80" rx="8" fill="#263b48"/><circle cx="694" cy="760" r="9" fill="#97aeb9"/><rect x="714" y="754" width="75" height="6" rx="3" fill="#d2dce0"/><rect x="236" y="732" width="130" height="70" rx="8" fill="#2a3441"/></g>
+<g stroke="#8098a7" stroke-width="2" stroke-dasharray="5 11" opacity=".28"><path d="M720 510C660 560 690 590 748 615"/><path d="M280 602C236 640 248 667 302 700"/><path d="M760 893C720 948 688 995 646 1060"/></g>
+<!-- seated figure -->
+<ellipse cx="470" cy="1580" rx="320" ry="90" fill="#000" opacity=".4" filter="url(#soft)"/>
+<path d="M355 1130 C345 1010 389 925 470 910 C549 916 592 1000 580 1117 C570 1212 527 1260 469 1265 C407 1260 365 1210 355 1130Z" fill="#101218"/>
+<path d="M362 1024 C390 925 450 886 510 907 C560 925 587 972 586 1031 C547 1000 510 990 474 997 C430 1004 393 1024 362 1055Z" fill="#090b0f"/>
+<path d="M225 1800 C230 1500 285 1280 431 1238 C557 1202 676 1305 733 1480 C774 1604 789 1710 792 1800Z" fill="#13171d"/>
+<path d="M417 1298 C506 1320 560 1390 612 1502" fill="none" stroke="#2b323a" stroke-width="24" stroke-linecap="round"/>
+<path d="M438 1328 C489 1290 532 1270 564 1286 C596 1302 609 1354 580 1390 C550 1428 492 1417 453 1380Z" fill="#20242a"/>
+<!-- phone -->
+<g transform="rotate(9 556 1325)" filter="url(#glow)"><rect x="521" y="1248" width="74" height="144" rx="14" fill="#080b10" stroke="#738b98" stroke-width="3"/><rect x="528" y="1261" width="60" height="113" rx="8" fill="url(#phone)"/><circle cx="558" cy="1382" r="4" fill="#718894"/></g>
+<ellipse cx="555" cy="1310" rx="180" ry="170" fill="#b7d1dd" opacity=".1" filter="url(#soft)"/>
+<!-- repetition marks -->
+<g fill="#d9e5e9" opacity=".18"><rect x="825" y="1010" width="5" height="95" rx="2"/><rect x="825" y="1120" width="5" height="56" rx="2"/><rect x="825" y="1192" width="5" height="26" rx="2"/></g>
+<path d="M109 1230 H891" stroke="#293744" stroke-width="3"/>
+<rect y="1660" width="1000" height="140" fill="#07090c" opacity=".45"/>
+</svg>
