@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1800" role="img" aria-labelledby="title desc">
+  <title id="title">AI love editorial opening</title>
+  <desc id="desc">A human profile faces a translucent artificial presence, separated by a narrow boundary while their visual fields overlap.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3f0e8"/><stop offset="1" stop-color="#d9ddd9"/></linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ca8aa" stop-opacity=".22"/><stop offset="1" stop-color="#5f6f74" stop-opacity=".82"/></linearGradient>
+    <linearGradient id="bond" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d2b2b" stop-opacity=".94"/><stop offset="1" stop-color="#6f7c80" stop-opacity=".88"/></linearGradient>
+  </defs>
+  <rect width="1000" height="1800" fill="url(#bg)"/>
+  <rect x="54" y="54" width="892" height="1692" fill="none" stroke="#171713" stroke-width="3"/>
+  <text x="92" y="120" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="7" fill="#7d2b2b">HUMAN / FEATURE 002</text>
+  <path d="M190 475 C190 330 292 232 412 232 C517 232 585 309 585 420 C585 501 543 571 473 612 C435 635 414 682 414 744 V1046 H172 V748 C172 650 225 574 296 532 C232 517 190 500 190 475 Z" fill="#1a1916"/>
+  <circle cx="397" cy="408" r="7" fill="#f3f0e8"/>
+  <path d="M810 475 C810 330 708 232 588 232 C483 232 415 309 415 420 C415 501 457 571 527 612 C565 635 586 682 586 744 V1046 H828 V748 C828 650 775 574 704 532 C768 517 810 500 810 475 Z" fill="url(#ai)" stroke="#58676b" stroke-width="3"/>
+  <circle cx="603" cy="408" r="7" fill="#f3f0e8"/>
+  <path d="M500 220 V1100" stroke="#171713" stroke-width="2" stroke-dasharray="10 16" opacity=".55"/>
+  <path d="M355 780 C420 718 469 698 500 698 C531 698 580 718 645 780" fill="none" stroke="url(#bond)" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="500" cy="699" r="25" fill="#f3f0e8" stroke="#171713" stroke-width="3"/>
+  <g opacity=".92">
+    <rect x="116" y="1135" width="768" height="250" rx="14" fill="#ece8df" stroke="#171713" stroke-width="2"/>
+    <text x="150" y="1202" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="5" fill="#5f5b53">HUMAN SIDE</text>
+    <text x="150" y="1260" font-family="Georgia, serif" font-size="45" fill="#171713">attachment can be real</text>
+    <path d="M150 1310 H445" stroke="#7d2b2b" stroke-width="6"/>
+    <text x="550" y="1202" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="5" fill="#5f5b53">MACHINE SIDE</text>
+    <text x="550" y="1260" font-family="Georgia, serif" font-size="45" fill="#171713">inner life unresolved</text>
+    <path d="M550 1310 H846" stroke="#6f7c80" stroke-width="6"/>
+  </g>
+  <text x="92" y="1588" font-family="Georgia, serif" font-size="58" fill="#171713">two questions, not one</text>
+  <text x="92" y="1648" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="5" fill="#5f5b53">HUMAN BOND ≠ PROOF OF MACHINE CONSCIOUSNESS</text>
+  <path d="M86 1678 H914" stroke="#171713" stroke-width="2"/>
+  <text x="92" y="1726" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="4" fill="#5f5b53">EDITORIAL ILLUSTRATION / NOT EMPIRICAL DATA</text>
+</svg>
