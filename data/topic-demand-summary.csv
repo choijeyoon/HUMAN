@@ -1,0 +1,4 @@
+experiment,feature_id,topic,impressions,clicks,article_views,engaged_30s,read_50pct,completions,next_article_clicks,notes
+topic-demand-v1,feature-001,K-pop / parasocial attachment,,,,,,,,not measured yet
+topic-demand-v1,feature-002,AI / intimacy,,,,,,,,not measured yet
+topic-demand-v1,feature-003,Attention / scrolling,,,,,,,,not measured yet
