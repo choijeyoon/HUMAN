@@ -4,6 +4,8 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -12,14 +14,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,7 +32,7 @@ jobs:
           test "$(stat -c%s assets/images/issue-001-cover-source-v2.avif)" -eq 77016
           echo "fb1018a726320753a454a29d440c9ca9ca53ecbc5ac1f77ee22277c65249b4e5  assets/images/issue-001-cover-source-v2.avif" | sha256sum -c -
 
-      - name: Build 4K production cover v2
+      - name: Build and verify 4K production assets
         shell: bash
         run: |
           set -euo pipefail
@@ -55,31 +54,40 @@ jobs:
           test "$(stat -c%s assets/images/issue-001-cover-4k-v2.webp)" -gt 900000
           test "$(stat -c%s assets/images/issue-001-cover-4k-v2.jpg)" -gt 900000
 
-      - name: Switch homepage to latest verified 4K asset
+      - name: Build launch HTML
+        run: python3 scripts/build_site.py
+
+      - name: Validate launch output
         shell: bash
         run: |
           set -euo pipefail
-          python3 - <<'PY'
-          from pathlib import Path
-          p = Path('index.html')
-          s = p.read_text(encoding='utf-8')
-          old_img = '<img src="assets/images/issue-001-cover-ultra.jpg?v=20260818-7" width="1536" height="1024" loading="eager" fetchpriority="high" alt="Editorial composite of a serene human portrait between a luminous concert crowd and an abstract artificial profile dissolving into structured fragments.">'
-          new_img = '<picture style="display:block"><source srcset="assets/images/issue-001-cover-4k-v2.webp?v=20260819-4k2" type="image/webp"><img src="assets/images/issue-001-cover-4k-v2.jpg?v=20260819-4k2" width="4096" height="2730" loading="eager" fetchpriority="high" alt="HUMAN Issue 001 editorial cover: a concert crowd, a serene human portrait, and a dissolving digital human profile."></picture>'
-          if old_img not in s:
-              raise SystemExit('expected cover img markup not found')
-          s = s.replace(old_img, new_img, 1)
-          s = s.replace('https://choijeyoon.github.io/HUMAN/assets/images/issue-001-cover-ultra.jpg', 'https://choijeyoon.github.io/HUMAN/assets/images/issue-001-cover-4k-v2.jpg?v=20260819-4k2')
-          p.write_text(s, encoding='utf-8')
-          PY
-          grep -q 'issue-001-cover-4k-v2.webp?v=20260819-4k2' index.html
-          grep -q 'width="4096" height="2730"' index.html
+          grep -q 'issue-001-cover-4k-v2.webp?v=20260819-launch2' index.html
+          grep -q 'Read Feature 001' index.html
+          grep -q 'HUMAN_ARTICLE_SEO' en/articles/idol-dating-betrayal/index.html
+          grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
+          grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
+          grep -q 'HUMAN_ARTICLE_OPENING' en/articles/idol-dating-betrayal/index.html
+          grep -q 'noindex,follow' ko/index.html
+          grep -q 'noindex,follow' ja/index.html
 
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
+
       - name: Upload site
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

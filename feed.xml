@@ -5,9 +5,10 @@
     <link>https://choijeyoon.github.io/HUMAN/</link>
     <description>Evidence-led essays on culture, AI, attention and the human mind.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 09:10:00 GMT</lastBuildDate>
-    <item><title>Why Does Idol Dating Feel Like Betrayal?</title><link>https://choijeyoon.github.io/HUMAN/en/articles/idol-dating-betrayal/</link><guid>https://choijeyoon.github.io/HUMAN/en/articles/idol-dating-betrayal/</guid><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><description>Parasocial relationships, expectation updates and fandom identity behind reactions to idol dating news.</description></item>
-    <item><title>Could You Really Fall in Love With an AI?</title><link>https://choijeyoon.github.io/HUMAN/en/articles/ai-love/</link><guid>https://choijeyoon.github.io/HUMAN/en/articles/ai-love/</guid><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><description>What current evidence says about attachment to conversational AI, perceived agency, well-being and consciousness.</description></item>
-    <item><title>Why Can’t We Stop Scrolling?</title><link>https://choijeyoon.github.io/HUMAN/en/articles/scrolling/</link><guid>https://choijeyoon.github.io/HUMAN/en/articles/scrolling/</guid><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><description>Reward learning, habit, anticipation, personalization, boredom and interface friction behind repetitive scrolling.</description></item>
+    <lastBuildDate>Wed, 19 Aug 2026 02:40:00 GMT</lastBuildDate>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://choijeyoon.github.io/HUMAN/feed.xml" rel="self" type="application/rss+xml" />
+    <item><title>Why Does Idol Dating Feel Like Betrayal?</title><link>https://choijeyoon.github.io/HUMAN/en/articles/idol-dating-betrayal/</link><guid isPermaLink="true">https://choijeyoon.github.io/HUMAN/en/articles/idol-dating-betrayal/</guid><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><description>Parasocial relationships, expectation updates and fandom identity behind reactions to idol dating news.</description></item>
+    <item><title>Could You Really Fall in Love With an AI?</title><link>https://choijeyoon.github.io/HUMAN/en/articles/ai-love/</link><guid isPermaLink="true">https://choijeyoon.github.io/HUMAN/en/articles/ai-love/</guid><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><description>What current evidence says about attachment to conversational AI, perceived agency, well-being and consciousness.</description></item>
+    <item><title>Why Can’t We Stop Scrolling?</title><link>https://choijeyoon.github.io/HUMAN/en/articles/scrolling/</link><guid isPermaLink="true">https://choijeyoon.github.io/HUMAN/en/articles/scrolling/</guid><pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate><description>Reward learning, habit, anticipation, personalization, boredom and interface friction behind repetitive scrolling.</description></item>
   </channel>
 </rss>
