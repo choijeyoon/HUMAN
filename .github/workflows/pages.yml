@@ -58,9 +58,6 @@ jobs:
       - name: Build launch HTML
         run: python3 scripts/build_site.py
 
-      - name: Integrate flagship figures
-        run: python3 scripts/figure_integration.py
-
       - name: Add measurement hooks
         run: python3 scripts/measurement_hooks.py
 
@@ -74,10 +71,12 @@ jobs:
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
           grep -q 'HUMAN_ARTICLE_OPENING' en/articles/idol-dating-betrayal/index.html
-          grep -q 'HUMAN_FIGURE_KPOP_EVIDENCE' en/articles/idol-dating-betrayal/index.html
-          grep -q 'HUMAN_FIGURE_SCROLL_EVIDENCE' en/articles/scrolling/index.html
+          grep -q 'parasocial-attachment.svg' en/articles/idol-dating-betrayal/index.html
+          grep -q 'kpop-evidence-map.svg' en/articles/idol-dating-betrayal/index.html
+          grep -q 'ai-relationship-v2.svg' en/articles/ai-love/index.html
+          grep -q 'ai-evidence-map.svg' en/articles/ai-love/index.html
+          grep -q 'scrolling-control-loop.svg' en/articles/scrolling/index.html
           grep -q 'scrolling-evidence-map.svg' en/articles/scrolling/index.html
-          grep -q 'Evidence is strongest for immediate human response' en/articles/ai-love/index.html
           grep -q 'data-article="feature-001"' en/articles/idol-dating-betrayal/index.html
           grep -q 'HUMAN_ANALYTICS_HOOK' index.html
           grep -q 'HUMAN_ANALYTICS_HOOK' en/articles/scrolling/index.html
