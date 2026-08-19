@@ -48,6 +48,28 @@ jobs:
           print('Six scalable SVG figures validated')
           PY
 
+      - name: Verify editorial opening plates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import glob
+          import xml.etree.ElementTree as ET
+          expected = {
+              'assets/openings-v4/idol-dating-opening-v4.svg',
+              'assets/openings-v4/ai-love-opening-v4.svg',
+              'assets/openings-v4/scrolling-opening-v4.svg',
+          }
+          files = set(glob.glob('assets/openings-v4/*.svg'))
+          assert files == expected, files
+          for path in sorted(files):
+              root = ET.parse(path).getroot()
+              assert root.tag.endswith('svg'), path
+              assert root.attrib.get('viewBox') == '0 0 1000 1800', path
+              assert not any(node.tag.endswith('image') for node in root.iter()), path
+          print('Three portrait opening SVGs validated')
+          PY
+
       - name: Build and verify 4K production assets
         if: github.event_name != 'pull_request'
         shell: bash
@@ -83,10 +105,16 @@ jobs:
           set -euo pipefail
           grep -q 'issue-001-cover-4k-v2.webp?v=20260819-launch2' index.html
           grep -q 'Read Feature 001' index.html
+          grep -q 'assets/openings-v4/idol-dating-opening-v4.svg?v=20260819-opening1' index.html
+          grep -q 'assets/openings-v4/ai-love-opening-v4.svg?v=20260819-opening1' index.html
+          grep -q 'assets/openings-v4/scrolling-opening-v4.svg?v=20260819-opening1' index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/idol-dating-betrayal/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
           grep -q 'HUMAN_ARTICLE_OPENING' en/articles/idol-dating-betrayal/index.html
+          grep -q 'assets/openings-v4/idol-dating-opening-v4.svg?v=20260819-opening1' en/articles/idol-dating-betrayal/index.html
+          grep -q 'assets/openings-v4/ai-love-opening-v4.svg?v=20260819-opening1' en/articles/ai-love/index.html
+          grep -q 'assets/openings-v4/scrolling-opening-v4.svg?v=20260819-opening1' en/articles/scrolling/index.html
           grep -q 'assets/figures-v4/idol-dating-fig01.svg?v=20260819-vector1' en/articles/idol-dating-betrayal/index.html
           grep -q 'assets/figures-v4/idol-dating-fig02.svg?v=20260819-vector1' en/articles/idol-dating-betrayal/index.html
           grep -q 'assets/figures-v4/ai-love-fig01.svg?v=20260819-vector1' en/articles/ai-love/index.html
