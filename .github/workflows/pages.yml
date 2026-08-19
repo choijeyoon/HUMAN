@@ -57,6 +57,9 @@ jobs:
       - name: Build launch HTML
         run: python3 scripts/build_site.py
 
+      - name: Add measurement hooks
+        run: python3 scripts/measurement_hooks.py
+
       - name: Validate launch output
         shell: bash
         run: |
@@ -67,6 +70,9 @@ jobs:
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
           grep -q 'HUMAN_ARTICLE_OPENING' en/articles/idol-dating-betrayal/index.html
+          grep -q 'data-article="feature-001"' en/articles/idol-dating-betrayal/index.html
+          grep -q 'HUMAN_ANALYTICS_HOOK' index.html
+          grep -q 'HUMAN_ANALYTICS_HOOK' en/articles/scrolling/index.html
           grep -q 'noindex,follow' ko/index.html
           grep -q 'noindex,follow' ja/index.html
 
