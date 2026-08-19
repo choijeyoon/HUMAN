@@ -33,6 +33,7 @@ jobs:
           echo "fb1018a726320753a454a29d440c9ca9ca53ecbc5ac1f77ee22277c65249b4e5  assets/images/issue-001-cover-source-v2.avif" | sha256sum -c -
 
       - name: Build and verify 4K production assets
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
@@ -57,6 +58,9 @@ jobs:
       - name: Build launch HTML
         run: python3 scripts/build_site.py
 
+      - name: Add measurement hooks
+        run: python3 scripts/measurement_hooks.py
+
       - name: Validate launch output
         shell: bash
         run: |
@@ -67,6 +71,9 @@ jobs:
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
           grep -q 'HUMAN_ARTICLE_OPENING' en/articles/idol-dating-betrayal/index.html
+          grep -q 'data-article="feature-001"' en/articles/idol-dating-betrayal/index.html
+          grep -q 'HUMAN_ANALYTICS_HOOK' index.html
+          grep -q 'HUMAN_ANALYTICS_HOOK' en/articles/scrolling/index.html
           grep -q 'noindex,follow' ko/index.html
           grep -q 'noindex,follow' ja/index.html
 
