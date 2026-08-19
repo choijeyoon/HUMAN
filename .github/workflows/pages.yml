@@ -32,14 +32,26 @@ jobs:
           test "$(stat -c%s assets/images/issue-001-cover-source-v2.avif)" -eq 77016
           echo "fb1018a726320753a454a29d440c9ca9ca53ecbc5ac1f77ee22277c65249b4e5  assets/images/issue-001-cover-source-v2.avif" | sha256sum -c -
 
-      - name: Restore and verify visual explainer atlas
+      - name: Verify v5 scalable flagship figures
         shell: bash
         run: |
           set -euo pipefail
-          test "$(find assets/figure-atlas-v3 -maxdepth 1 -name '*.part' -type f | wc -l)" -eq 14
-          cat assets/figure-atlas-v3/*.part | base64 --decode > assets/images/flagship-figures-v3.webp
-          test "$(stat -c%s assets/images/flagship-figures-v3.webp)" -eq 82358
-          echo "6db61b1109afd0bff0c7e39d7c58eea08ab9e3366d807297fed8fe52a1da2810  assets/images/flagship-figures-v3.webp" | sha256sum -c -
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          files = [
+              'assets/figures/idol-dating-fig01-v5.svg',
+              'assets/figures/idol-dating-fig02-v5.svg',
+              'assets/figures/ai-love-fig01-v5.svg',
+              'assets/figures/ai-love-fig02-v5.svg',
+              'assets/figures/scrolling-fig01-v5.svg',
+              'assets/figures/scrolling-fig02-v5.svg',
+          ]
+          for path in files:
+              root = ET.parse(path).getroot()
+              assert root.tag.endswith('svg'), path
+              assert root.attrib.get('viewBox') == '0 0 1600 1000', (path, root.attrib.get('viewBox'))
+          print('Six v5 scalable SVG figures validated')
+          PY
 
       - name: Build and verify 4K production assets
         if: github.event_name != 'pull_request'
@@ -89,6 +101,12 @@ jobs:
           grep -q 'figure-atlas--ai-02' en/articles/ai-love/index.html
           grep -q 'figure-atlas--scroll-01' en/articles/scrolling/index.html
           grep -q 'figure-atlas--scroll-02' en/articles/scrolling/index.html
+          grep -q 'figures/idol-dating-fig01-v5.svg?v=20260819-v5' assets/figure-atlas-v3.css
+          grep -q 'figures/idol-dating-fig02-v5.svg?v=20260819-v5' assets/figure-atlas-v3.css
+          grep -q 'figures/ai-love-fig01-v5.svg?v=20260819-v5' assets/figure-atlas-v3.css
+          grep -q 'figures/ai-love-fig02-v5.svg?v=20260819-v5' assets/figure-atlas-v3.css
+          grep -q 'figures/scrolling-fig01-v5.svg?v=20260819-v5' assets/figure-atlas-v3.css
+          grep -q 'figures/scrolling-fig02-v5.svg?v=20260819-v5' assets/figure-atlas-v3.css
           grep -q 'data-article="feature-001"' en/articles/idol-dating-betrayal/index.html
           grep -q 'HUMAN_ANALYTICS_HOOK' index.html
           grep -q 'HUMAN_ANALYTICS_HOOK' en/articles/scrolling/index.html
