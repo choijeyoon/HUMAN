@@ -1,4 +1,5 @@
 from pathlib import Path
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,6 +18,19 @@ def insert_before(text: str, marker: str, block: str, sentinel: str) -> str:
     if marker not in text:
         raise RuntimeError(f"Figure insertion marker missing: {marker[:60]}")
     return text.replace(marker, block + "\n\n        " + marker, 1)
+
+
+# Validate every launch figure as XML before touching article markup.
+figure_paths = [
+    "assets/figures/parasocial-attachment.svg",
+    "assets/figures/kpop-evidence-map.svg",
+    "assets/figures/ai-relationship-v2.svg",
+    "assets/figures/ai-evidence-map.svg",
+    "assets/figures/scrolling-control-loop.svg",
+    "assets/figures/scrolling-evidence-map.svg",
+]
+for figure_path in figure_paths:
+    ET.parse(ROOT / figure_path)
 
 
 # K-pop: add a separate evidence figure before the individual-differences section.
