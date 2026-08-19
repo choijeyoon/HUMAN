@@ -1,20 +1,20 @@
 .figure-atlas-panel{
   display:block;
   width:100%;
-  aspect-ratio:1/1;
-  background-image:url("images/flagship-figures-v3.webp?v=20260819-v3");
-  background-size:300% 200%;
+  aspect-ratio:8/5;
+  background-size:contain;
+  background-position:center;
   background-repeat:no-repeat;
   background-color:#f3f0e8;
   border:0;
 }
-.figure-atlas--kpop-01{background-position:0% 0%}
-.figure-atlas--kpop-02{background-position:50% 0%}
-.figure-atlas--ai-01{background-position:100% 0%}
-.figure-atlas--ai-02{background-position:0% 100%}
-.figure-atlas--scroll-01{background-position:50% 100%}
-.figure-atlas--scroll-02{background-position:100% 100%}
+.figure-atlas--kpop-01{background-image:url("figures/idol-dating-fig01-v5.svg?v=20260819-v5")}
+.figure-atlas--kpop-02{background-image:url("figures/idol-dating-fig02-v5.svg?v=20260819-v5")}
+.figure-atlas--ai-01{background-image:url("figures/ai-love-fig01-v5.svg?v=20260819-v5")}
+.figure-atlas--ai-02{background-image:url("figures/ai-love-fig02-v5.svg?v=20260819-v5")}
+.figure-atlas--scroll-01{background-image:url("figures/scrolling-fig01-v5.svg?v=20260819-v5")}
+.figure-atlas--scroll-02{background-image:url("figures/scrolling-fig02-v5.svg?v=20260819-v5")}
 
 @media(max-width:720px){
-  .figure-atlas-panel{aspect-ratio:1/1;background-size:300% 200%}
+  .figure-atlas-panel{aspect-ratio:8/5;background-size:contain}
 }
