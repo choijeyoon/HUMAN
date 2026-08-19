@@ -156,11 +156,11 @@ def seo_block(article: dict) -> str:
         f'  <meta property="og:title" content="{article["title"]} — HUMAN">\n'
         f'  <meta property="og:description" content="{article["description"]}">\n'
         f'  <meta property="og:url" content="{url}">\n'
-        f'  <meta property="og:image" content="{COVER_JPG_ABS}">\n'
+        f'  <meta property="og:image" content="{opening_abs}">\n'
         '  <meta name="twitter:card" content="summary_large_image">\n'
         f'  <meta name="twitter:title" content="{article["title"]} — HUMAN">\n'
         f'  <meta name="twitter:description" content="{article["description"]}">\n'
-        f'  <meta name="twitter:image" content="{COVER_JPG_ABS}">\n'
+        f'  <meta name="twitter:image" content="{opening_abs}">\n'
         f'  <script type="application/ld+json">{schema_json}</script>'
     )
 
@@ -237,7 +237,10 @@ def validate() -> None:
         assert "HUMAN_ARTICLE_OPENING" in s
         assert f'{BASE}/en/articles/{article["slug"]}/' in s
         assert '"@type":"Article"' in s
+        opening_abs = f"{BASE}/{article['opening_asset']}?{OPENING_VERSION}"
         assert article["opening_asset"] in s
+        assert f'<meta property="og:image" content="{opening_abs}">' in s
+        assert f'<meta name="twitter:image" content="{opening_abs}">' in s
 
 
 if __name__ == "__main__":
