@@ -8,6 +8,7 @@ BASE = "https://choijeyoon.github.io/HUMAN"
 COVER_WEBP = "assets/images/issue-001-cover-4k-v2.webp?v=20260819-launch2"
 COVER_JPG = "assets/images/issue-001-cover-4k-v2.jpg?v=20260819-launch2"
 COVER_JPG_ABS = f"{BASE}/assets/images/issue-001-cover-4k-v2.jpg?v=20260819-launch2"
+OPENING_VERSION = "20260819-opening4"
 
 
 def read(path: str) -> str:
@@ -77,7 +78,10 @@ ARTICLES = [
         "section": "Culture × Attachment",
         "keywords": ["parasocial relationships", "K-pop", "fandom", "social cognition", "attachment"],
         "opening_class": "opening--kpop",
+        "opening_image": "assets/images/idol-dating-opening-v4.svg",
+        "opening_label": "OPENING PLATE 001 / K-POP × PSYCHOLOGY",
         "opening_title": "Mediated intimacy becomes psychologically real before it becomes reciprocal.",
+        "opening_note": "Repeated exposure can make a one-sided bond feel socially meaningful—without turning it into a reciprocal relationship.",
     },
     {
         "path": "en/articles/ai-love/index.html",
@@ -87,7 +91,10 @@ ARTICLES = [
         "section": "AI × Human Connection",
         "keywords": ["AI companions", "attachment", "anthropomorphism", "human-AI interaction", "consciousness"],
         "opening_class": "opening--ai",
+        "opening_image": "assets/images/ai-love-opening-v4.svg",
+        "opening_label": "OPENING PLATE 002 / AI × HUMAN CONNECTION",
         "opening_title": "A human bond can be measurable without settling what the machine is.",
+        "opening_note": "Responsiveness can feel intimate even while the nature of the ‘other’ remains an open question.",
     },
     {
         "path": "en/articles/scrolling/index.html",
@@ -97,19 +104,23 @@ ARTICLES = [
         "section": "Attention × Digital Behavior",
         "keywords": ["scrolling", "reinforcement learning", "habit", "attention", "social media"],
         "opening_class": "opening--scrolling",
+        "opening_image": "assets/images/scrolling-opening-v4.svg",
+        "opening_label": "OPENING PLATE 003 / ATTENTION × DIGITAL BEHAVIOR",
         "opening_title": "The next swipe is easy; stopping requires a decision point.",
+        "opening_note": "The feed keeps presenting another possible reward while the user has to actively create the stop.",
     },
 ]
 
 
 def seo_block(article: dict) -> str:
     url = f"{BASE}/en/articles/{article['slug']}/"
+    opening_abs = f"{BASE}/{article['opening_image']}?v={OPENING_VERSION}"
     schema = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": article["title"],
         "description": article["description"],
-        "image": [COVER_JPG_ABS],
+        "image": [opening_abs, COVER_JPG_ABS],
         "datePublished": "2026-08-18",
         "dateModified": "2026-08-19",
         "inLanguage": "en",
@@ -130,23 +141,27 @@ def seo_block(article: dict) -> str:
         f'  <meta property="og:title" content="{article["title"]} — HUMAN">\n'
         f'  <meta property="og:description" content="{article["description"]}">\n'
         f'  <meta property="og:url" content="{url}">\n'
-        f'  <meta property="og:image" content="{COVER_JPG_ABS}">\n'
+        f'  <meta property="og:image" content="{opening_abs}">\n'
         '  <meta name="twitter:card" content="summary_large_image">\n'
         f'  <meta name="twitter:title" content="{article["title"]} — HUMAN">\n'
         f'  <meta name="twitter:description" content="{article["description"]}">\n'
-        f'  <meta name="twitter:image" content="{COVER_JPG_ABS}">\n'
+        f'  <meta name="twitter:image" content="{opening_abs}">\n'
         f'  <script type="application/ld+json">{schema_json}</script>'
     )
 
 
 def opening_block(article: dict) -> str:
+    src = f"../../../{article['opening_image']}?v={OPENING_VERSION}"
     return f'''\n\n    <!-- HUMAN_ARTICLE_OPENING -->
     <figure class="article-opening-visual {article['opening_class']}">
       <picture>
-        <source srcset="../../../{COVER_WEBP}" type="image/webp">
-        <img src="../../../{COVER_JPG}" width="4096" height="2730" loading="eager" alt="Editorial illustration for {article['title']}">
+        <img src="{src}" width="1000" height="1800" loading="eager" fetchpriority="high" alt="Editorial opening illustration for {article['title']}">
       </picture>
-      <figcaption><span>OPENING IMAGE / EDITORIAL ILLUSTRATION</span><span>{article['opening_title']}</span><span>Not empirical data</span></figcaption>
+      <figcaption class="opening-copy">
+        <div class="opening-copy__top"><span>{article['opening_label']}</span><span>EDITORIAL ILLUSTRATION</span></div>
+        <p class="opening-copy__statement">{article['opening_title']}</p>
+        <div class="opening-copy__foot"><p>{article['opening_note']}</p><strong>Not empirical data</strong></div>
+      </figcaption>
     </figure>
     <div class="article-reading-map" aria-label="How this feature is structured">
       <span><small>01</small><strong>Question</strong></span>
@@ -205,6 +220,8 @@ def validate() -> None:
         assert "HUMAN_ARTICLE_OPENING" in s
         assert f'{BASE}/en/articles/{article["slug"]}/' in s
         assert '"@type":"Article"' in s
+        assert f"{article['opening_image']}?v={OPENING_VERSION}" in s
+        assert "opening-copy__statement" in s
 
 
 if __name__ == "__main__":
