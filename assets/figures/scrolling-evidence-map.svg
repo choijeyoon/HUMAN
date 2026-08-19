@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">What evidence directly explains repetitive scrolling</title>
+  <desc id="desc">An evidence ledger distinguishing reward learning and habit studies of social-media posting from more direct but correlational scrolling studies and personalized neural-response studies.</desc>
+  <rect width="1600" height="900" fill="#11110f"/>
+
+  <text x="72" y="62" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#f3f0e8">FIG. 02 / EVIDENCE</text>
+  <text x="72" y="112" font-family="Georgia,Times New Roman,serif" font-size="48" fill="#f3f0e8">Not all scrolling evidence answers the same question.</text>
+  <text x="72" y="145" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#bdb8ae">The strongest causal evidence is partly about adjacent social-media behavior; the most direct scrolling evidence is less causal.</text>
+  <line x1="72" y1="190" x2="1528" y2="190" stroke="#57534c"/>
+
+  <!-- column labels -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2.2" fill="#d4948b">
+    <text x="92" y="232">STUDY BASE</text>
+    <text x="560" y="232">WHAT IT SUPPORTS</text>
+    <text x="1240" y="232">INFERENCE</text>
+  </g>
+
+  <!-- row 1 -->
+  <g transform="translate(0 260)">
+    <rect x="72" y="0" width="1456" height="120" fill="#f3f0e8"/>
+    <text x="96" y="37" font-family="Georgia,Times New Roman,serif" font-size="28" fill="#11110f">Reward learning</text>
+    <text x="96" y="68" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6d6961">4,168 users + experiment N=176</text>
+    <text x="96" y="93" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6e211b">POSTING BEHAVIOUR</text>
+    <text x="560" y="45" font-family="Georgia,Times New Roman,serif" font-size="22" fill="#11110f">Social-media behavior adapts to experienced social reward.</text>
+    <text x="560" y="77" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6d6961">Strong evidence for reinforcement learning; not a direct swipe-by-swipe model.</text>
+    <text x="1240" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#11110f">CAUSAL</text>
+    <text x="1240" y="75" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#6e211b">INDIRECT TO SCROLLING</text>
+  </g>
+
+  <!-- row 2 -->
+  <g transform="translate(0 395)">
+    <rect x="72" y="0" width="1456" height="120" fill="none" stroke="#77736b"/>
+    <text x="96" y="37" font-family="Georgia,Times New Roman,serif" font-size="28" fill="#f3f0e8">Habit</text>
+    <text x="96" y="68" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#bdb8ae">2,696 users · computational modelling</text>
+    <text x="96" y="93" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#d4948b">POSTING BEHAVIOUR</text>
+    <text x="560" y="45" font-family="Georgia,Times New Roman,serif" font-size="22" fill="#f3f0e8">A hybrid reward + habit model can outperform either process alone.</text>
+    <text x="560" y="77" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#bdb8ae">Supports automaticity in frequent social-media behavior.</text>
+    <text x="1240" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#f3f0e8">COMPUTATIONAL</text>
+    <text x="1240" y="75" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#d4948b">INDIRECT TO SCROLLING</text>
+  </g>
+
+  <!-- row 3 -->
+  <g transform="translate(0 530)">
+    <rect x="72" y="0" width="1456" height="120" fill="#f3f0e8"/>
+    <text x="96" y="37" font-family="Georgia,Times New Roman,serif" font-size="28" fill="#11110f">Anticipation of the next item</text>
+    <text x="96" y="68" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6d6961">2026 short-form-video survey model</text>
+    <text x="96" y="93" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#6e211b">COMPULSIVE SCROLLING</text>
+    <text x="560" y="45" font-family="Georgia,Times New Roman,serif" font-size="22" fill="#11110f">Greater anticipation is associated with more compulsive scrolling.</text>
+    <text x="560" y="77" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6d6961">Directly about scrolling, but does not establish experimental causality.</text>
+    <text x="1240" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#6e211b">DIRECT BEHAVIOUR</text>
+    <text x="1240" y="75" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#11110f">CORRELATIONAL</text>
+  </g>
+
+  <!-- row 4 -->
+  <g transform="translate(0 665)">
+    <rect x="72" y="0" width="1456" height="120" fill="none" stroke="#77736b"/>
+    <text x="96" y="37" font-family="Georgia,Times New Roman,serif" font-size="28" fill="#f3f0e8">Personalized neural response</text>
+    <text x="96" y="68" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#bdb8ae">TikTok fMRI · personalized vs generalized clips</text>
+    <text x="96" y="93" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#d4948b">NEURAL CONTRAST</text>
+    <text x="560" y="45" font-family="Georgia,Times New Roman,serif" font-size="22" fill="#f3f0e8">Personalized content produces measurably different brain responses.</text>
+    <text x="560" y="77" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#bdb8ae">This is not a direct dopamine measurement and not a unique addiction signature.</text>
+    <text x="1240" y="46" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#d4948b">DIRECT NEURAL</text>
+    <text x="1240" y="75" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#f3f0e8">MECHANISM NON-SPECIFIC</text>
+  </g>
+
+  <text x="72" y="835" font-family="Georgia,Times New Roman,serif" font-size="28" fill="#f3f0e8">The best explanation is therefore multi-process: reward learning + habit + anticipation + adaptive interface.</text>
+  <text x="72" y="869" font-family="Helvetica,Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#bdb8ae">NO ROW SUPPORTS THE CLAIM THAT EVERY SWIPE IS A “DOPAMINE HIT.”</text>
+</svg>
