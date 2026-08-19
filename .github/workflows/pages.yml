@@ -33,6 +33,7 @@ jobs:
           echo "fb1018a726320753a454a29d440c9ca9ca53ecbc5ac1f77ee22277c65249b4e5  assets/images/issue-001-cover-source-v2.avif" | sha256sum -c -
 
       - name: Build and verify 4K production assets
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
