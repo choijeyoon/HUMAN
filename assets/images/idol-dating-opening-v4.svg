@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1800" role="img" aria-labelledby="title desc">
+<title id="title">Mediated intimacy in a concert crowd</title><desc id="desc">An editorial concert scene: a solitary performer seen from behind faces a field of luminous fans and screens, suggesting distance that feels intimate.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#09090d"/><stop offset=".45" stop-color="#28101d"/><stop offset="1" stop-color="#6f1f35"/></linearGradient>
+  <radialGradient id="stage" cx="50%" cy="28%" r="62%"><stop stop-color="#f9d8d0" stop-opacity=".9"/><stop offset=".2" stop-color="#c45c76" stop-opacity=".38"/><stop offset="1" stop-color="#0b0b10" stop-opacity="0"/></radialGradient>
+  <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#321522"/><stop offset=".55" stop-color="#8f3857"/><stop offset="1" stop-color="#d98ba1"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
+  <pattern id="crowd" width="84" height="80" patternUnits="userSpaceOnUse"><circle cx="18" cy="28" r="5" fill="#f6d5d0" opacity=".72"/><circle cx="52" cy="20" r="3" fill="#d8829d" opacity=".6"/><rect x="40" y="43" width="11" height="17" rx="2" fill="#fff4ef" opacity=".5"/><circle cx="72" cy="62" r="4" fill="#efb5c1" opacity=".6"/></pattern>
+</defs>
+<rect width="1000" height="1800" fill="url(#bg)"/>
+<rect width="1000" height="1180" fill="url(#stage)"/>
+<ellipse cx="500" cy="510" rx="420" ry="260" fill="#ffdae0" opacity=".08" filter="url(#soft)"/>
+<g opacity=".95" filter="url(#glow)"><circle cx="165" cy="300" r="9" fill="#fff2e9"/><circle cx="760" cy="250" r="8" fill="#ffd6df"/><circle cx="875" cy="420" r="6" fill="#fff"/><circle cx="335" cy="390" r="5" fill="#f4a3b5"/></g>
+<path d="M0 650 C210 560 370 605 510 565 C675 520 800 555 1000 485 L1000 1290 L0 1290Z" fill="#120d13" opacity=".84"/>
+<rect x="0" y="650" width="1000" height="650" fill="url(#crowd)" opacity=".82"/>
+<g opacity=".72"><path d="M0 900 C160 820 350 850 510 800 C690 744 830 790 1000 720" fill="none" stroke="#f1a2b5" stroke-width="2"/><path d="M0 1040 C160 950 350 995 510 930 C690 860 835 900 1000 840" fill="none" stroke="#8c5269" stroke-width="1"/></g>
+<!-- performer -->
+<ellipse cx="500" cy="1435" rx="210" ry="75" fill="#000" opacity=".35" filter="url(#soft)"/>
+<path d="M388 955 C385 826 430 742 500 735 C575 742 617 828 612 955 C608 1048 577 1120 500 1126 C423 1120 392 1048 388 955Z" fill="#151016"/>
+<path d="M404 858 C424 750 470 700 522 706 C572 712 603 768 603 842 C574 810 542 788 508 786 C473 785 438 807 404 858Z" fill="#0c0b0e"/>
+<path d="M318 1610 C326 1275 365 1120 500 1110 C635 1120 674 1275 682 1610Z" fill="url(#dress)"/>
+<path d="M372 1185 C408 1152 455 1138 500 1142 C549 1138 596 1152 629 1185" fill="none" stroke="#f1b9c6" stroke-width="4" opacity=".5"/>
+<path d="M410 1245 L370 1540 M590 1245 L630 1540" stroke="#d57690" stroke-width="3" opacity=".5"/>
+<circle cx="442" cy="1315" r="3" fill="#ffdbe2"/><circle cx="548" cy="1390" r="3" fill="#ffdbe2"/><circle cx="472" cy="1495" r="3" fill="#ffdbe2"/><circle cx="580" cy="1510" r="3" fill="#ffdbe2"/>
+<!-- mediated frames -->
+<g fill="none" stroke="#efd9d2" stroke-width="2" opacity=".5"><rect x="70" y="470" width="120" height="180" rx="8"/><rect x="785" y="520" width="125" height="188" rx="8"/></g>
+<g opacity=".35" fill="#f6e7e1"><rect x="88" y="492" width="84" height="6"/><rect x="88" y="510" width="58" height="4"/><rect x="803" y="543" width="88" height="6"/><rect x="803" y="562" width="60" height="4"/></g>
+<rect y="1660" width="1000" height="140" fill="#0c0b0f" opacity=".34"/>
+</svg>
