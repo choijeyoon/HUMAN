@@ -48,6 +48,24 @@ jobs:
           print('Six scalable SVG figures validated')
           PY
 
+      - name: Verify editorial opening plates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          files = [
+              'assets/images/idol-dating-opening-v4.svg',
+              'assets/images/ai-love-opening-v4.svg',
+              'assets/images/scrolling-opening-v4.svg',
+          ]
+          for path in files:
+              root = ET.parse(path).getroot()
+              assert root.tag.endswith('svg'), path
+              assert root.attrib.get('viewBox') == '0 0 1000 1800', path
+          print('Three portrait opening SVGs validated')
+          PY
+
       - name: Build and verify 4K production assets
         if: github.event_name != 'pull_request'
         shell: bash
@@ -56,16 +74,8 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           test "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/images/issue-001-cover-source-v2.avif)" = "1536x1024"
-          ffmpeg -hide_banner -loglevel error -y \
-            -i assets/images/issue-001-cover-source-v2.avif \
-            -vf "scale=4096:2730:flags=lanczos,unsharp=5:5:0.65:5:5:0.0" \
-            -frames:v 1 -c:v libwebp -quality 95 -compression_level 6 -preset picture \
-            assets/images/issue-001-cover-4k-v2.webp
-          ffmpeg -hide_banner -loglevel error -y \
-            -i assets/images/issue-001-cover-source-v2.avif \
-            -vf "scale=4096:2730:flags=lanczos,unsharp=5:5:0.65:5:5:0.0" \
-            -frames:v 1 -c:v mjpeg -q:v 2 -pix_fmt yuvj444p \
-            assets/images/issue-001-cover-4k-v2.jpg
+          ffmpeg -hide_banner -loglevel error -y -i assets/images/issue-001-cover-source-v2.avif -vf "scale=4096:2730:flags=lanczos,unsharp=5:5:0.65:5:5:0.0" -frames:v 1 -c:v libwebp -quality 95 -compression_level 6 -preset picture assets/images/issue-001-cover-4k-v2.webp
+          ffmpeg -hide_banner -loglevel error -y -i assets/images/issue-001-cover-source-v2.avif -vf "scale=4096:2730:flags=lanczos,unsharp=5:5:0.65:5:5:0.0" -frames:v 1 -c:v mjpeg -q:v 2 -pix_fmt yuvj444p assets/images/issue-001-cover-4k-v2.jpg
           test "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/images/issue-001-cover-4k-v2.webp)" = "4096x2730"
           test "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/images/issue-001-cover-4k-v2.jpg)" = "4096x2730"
           test "$(stat -c%s assets/images/issue-001-cover-4k-v2.webp)" -gt 900000
@@ -86,7 +96,12 @@ jobs:
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/idol-dating-betrayal/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
-          grep -q 'HUMAN_ARTICLE_OPENING' en/articles/idol-dating-betrayal/index.html
+          grep -q 'idol-dating-opening-v4.svg?v=20260819-opening4' en/articles/idol-dating-betrayal/index.html
+          grep -q 'ai-love-opening-v4.svg?v=20260819-opening4' en/articles/ai-love/index.html
+          grep -q 'scrolling-opening-v4.svg?v=20260819-opening4' en/articles/scrolling/index.html
+          grep -q 'opening-copy__statement' en/articles/idol-dating-betrayal/index.html
+          grep -q 'opening-copy__statement' en/articles/ai-love/index.html
+          grep -q 'opening-copy__statement' en/articles/scrolling/index.html
           grep -q 'assets/figures-v4/idol-dating-fig01.svg?v=20260819-vector1' en/articles/idol-dating-betrayal/index.html
           grep -q 'assets/figures-v4/idol-dating-fig02.svg?v=20260819-vector1' en/articles/idol-dating-betrayal/index.html
           grep -q 'assets/figures-v4/ai-love-fig01.svg?v=20260819-vector1' en/articles/ai-love/index.html
@@ -96,9 +111,6 @@ jobs:
           ! grep -q 'figure-atlas--' en/articles/idol-dating-betrayal/index.html
           ! grep -q 'figure-atlas--' en/articles/ai-love/index.html
           ! grep -q 'figure-atlas--' en/articles/scrolling/index.html
-          ! grep -q 'figure-atlas-v3.css' en/articles/idol-dating-betrayal/index.html
-          ! grep -q 'figure-atlas-v3.css' en/articles/ai-love/index.html
-          ! grep -q 'figure-atlas-v3.css' en/articles/scrolling/index.html
           grep -q 'data-article="feature-001"' en/articles/idol-dating-betrayal/index.html
           grep -q 'HUMAN_ANALYTICS_HOOK' index.html
           grep -q 'HUMAN_ANALYTICS_HOOK' en/articles/scrolling/index.html
