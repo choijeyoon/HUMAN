@@ -54,6 +54,25 @@ jobs:
           test "$(stat -c%s assets/images/issue-001-cover-4k.webp)" -gt 300000
           test "$(stat -c%s assets/images/issue-001-cover-4k.jpg)" -gt 500000
 
+      - name: Switch homepage to verified 4K asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          old_img = '<img src="assets/images/issue-001-cover-ultra.jpg?v=20260818-7" width="1536" height="1024" loading="eager" fetchpriority="high" alt="Editorial composite of a serene human portrait between a luminous concert crowd and an abstract artificial profile dissolving into structured fragments.">'
+          new_img = '<picture style="display:block"><source srcset="assets/images/issue-001-cover-4k.webp?v=20260819-4k1" type="image/webp"><img src="assets/images/issue-001-cover-4k.jpg?v=20260819-4k1" width="4096" height="2730" loading="eager" fetchpriority="high" alt="Editorial composite of a serene human portrait between a luminous concert crowd and an abstract artificial profile dissolving into structured fragments."></picture>'
+          if old_img not in s:
+              raise SystemExit('expected cover img markup not found')
+          s = s.replace(old_img, new_img, 1)
+          s = s.replace('https://choijeyoon.github.io/HUMAN/assets/images/issue-001-cover-ultra.jpg', 'https://choijeyoon.github.io/HUMAN/assets/images/issue-001-cover-4k.jpg?v=20260819-4k1')
+          p.write_text(s, encoding='utf-8')
+          PY
+          grep -q 'issue-001-cover-4k.webp?v=20260819-4k1' index.html
+          grep -q 'width="4096" height="2730"' index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload site
