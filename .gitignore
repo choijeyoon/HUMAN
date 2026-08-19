@@ -1,0 +1,30 @@
+# HUMAN experiment data safety
+# Keep secrets, raw analytics exports, and visitor-level data out of this public repository.
+.env
+.env.*
+!.env.example
+
+# Credentials / keys
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+*secret*.json
+
+# Raw analytics exports and private data
+raw/
+data/raw/
+data/private/
+exports/
+analytics-exports/
+*analytics-export*.csv
+*analytics-export*.json
+*visitor*.csv
+*visitor*.json
+*session*.csv
+*session*.json
+
+# Local analysis output / caches
+__pycache__/
+*.pyc
+.DS_Store
