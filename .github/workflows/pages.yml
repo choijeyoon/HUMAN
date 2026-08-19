@@ -24,13 +24,55 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Restore and verify ultra-resolution cover
+
+      - name: Restore and verify source cover
         shell: bash
         run: |
           set -euo pipefail
           cat assets/cover-ultra-v2/*.part | base64 --decode > assets/images/issue-001-cover-ultra-v2.avif
           test "$(stat -c%s assets/images/issue-001-cover-ultra-v2.avif)" -eq 148491
           echo "a7081b1bce4c2e11c1758806bb3e1db67f4e37a6480bbfa3fc8e654a52ca7d99  assets/images/issue-001-cover-ultra-v2.avif" | sha256sum -c -
+
+      - name: Build 4K production cover
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -hide_banner -loglevel error -y \
+            -i assets/images/issue-001-cover-ultra-v2.avif \
+            -vf "scale=4096:2730:flags=lanczos,unsharp=5:5:0.65:5:5:0.0" \
+            -frames:v 1 -c:v libwebp -quality 95 -compression_level 6 -preset picture \
+            assets/images/issue-001-cover-4k.webp
+          ffmpeg -hide_banner -loglevel error -y \
+            -i assets/images/issue-001-cover-ultra-v2.avif \
+            -vf "scale=4096:2730:flags=lanczos,unsharp=5:5:0.65:5:5:0.0" \
+            -frames:v 1 -c:v mjpeg -q:v 2 -pix_fmt yuvj444p \
+            assets/images/issue-001-cover-4k.jpg
+          test "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/images/issue-001-cover-4k.webp)" = "4096x2730"
+          test "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 assets/images/issue-001-cover-4k.jpg)" = "4096x2730"
+          test "$(stat -c%s assets/images/issue-001-cover-4k.webp)" -gt 300000
+          test "$(stat -c%s assets/images/issue-001-cover-4k.jpg)" -gt 500000
+
+      - name: Switch homepage to verified 4K asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          old_img = '<img src="assets/images/issue-001-cover-ultra.jpg?v=20260818-7" width="1536" height="1024" loading="eager" fetchpriority="high" alt="Editorial composite of a serene human portrait between a luminous concert crowd and an abstract artificial profile dissolving into structured fragments.">'
+          new_img = '<picture style="display:block"><source srcset="assets/images/issue-001-cover-4k.webp?v=20260819-4k1" type="image/webp"><img src="assets/images/issue-001-cover-4k.jpg?v=20260819-4k1" width="4096" height="2730" loading="eager" fetchpriority="high" alt="Editorial composite of a serene human portrait between a luminous concert crowd and an abstract artificial profile dissolving into structured fragments."></picture>'
+          if old_img not in s:
+              raise SystemExit('expected cover img markup not found')
+          s = s.replace(old_img, new_img, 1)
+          s = s.replace('https://choijeyoon.github.io/HUMAN/assets/images/issue-001-cover-ultra.jpg', 'https://choijeyoon.github.io/HUMAN/assets/images/issue-001-cover-4k.jpg?v=20260819-4k1')
+          p.write_text(s, encoding='utf-8')
+          PY
+          grep -q 'issue-001-cover-4k.webp?v=20260819-4k1' index.html
+          grep -q 'width="4096" height="2730"' index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload site
