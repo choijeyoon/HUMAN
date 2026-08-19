@@ -93,6 +93,13 @@ jobs:
           set -euo pipefail
           grep -q 'issue-001-cover-4k-v2.webp?v=20260819-launch2' index.html
           grep -q 'Read Feature 001' index.html
+          grep -q 'feature-visual--kpop' index.html
+          grep -q 'feature-visual--ai' index.html
+          grep -q 'feature-visual--scrolling' index.html
+          grep -q 'idol-dating-opening-v4.svg?v=20260819-opening4' index.html
+          grep -q 'ai-love-opening-v4.svg?v=20260819-opening4' index.html
+          grep -q 'scrolling-opening-v4.svg?v=20260819-opening4' index.html
+          grep -q 'launch.css?v=20260819-featurecards1' index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/idol-dating-betrayal/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/ai-love/index.html
           grep -q 'HUMAN_ARTICLE_SEO' en/articles/scrolling/index.html
