@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1800" role="img" aria-labelledby="title desc">
+<title id="title">Human intimacy facing an artificial presence</title><desc id="desc">A warm human profile meets a translucent digital profile separated by a narrow luminous gap, suggesting attachment without resolving machine consciousness.</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4eee4"/><stop offset=".52" stop-color="#e9ddcf"/><stop offset="1" stop-color="#b47a7b"/></linearGradient>
+  <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8c5b2"/><stop offset=".55" stop-color="#c88677"/><stop offset="1" stop-color="#6d3037"/></linearGradient>
+  <linearGradient id="digital" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf4" stop-opacity=".9"/><stop offset=".55" stop-color="#dcb9b4" stop-opacity=".55"/><stop offset="1" stop-color="#7a2336" stop-opacity=".18"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#fff" stop-opacity=".9"/><stop offset=".22" stop-color="#f8d8cf" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="mesh" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21H42M21 0V42" stroke="#7b293a" stroke-width=".7" opacity=".13"/><circle cx="21" cy="21" r="1.7" fill="#7b293a" opacity=".35"/></pattern>
+</defs>
+<rect width="1000" height="1800" fill="url(#paper)"/>
+<ellipse cx="505" cy="820" rx="410" ry="530" fill="url(#halo)" filter="url(#blur)"/>
+<!-- left human -->
+<path d="M0 1800 V1190 C42 1100 126 1040 228 1012 C212 945 218 884 238 834 C259 784 292 752 324 716 C293 668 279 610 286 554 C298 450 368 382 458 388 C555 395 610 477 602 570 C596 640 561 688 535 722 C566 753 579 794 569 835 C558 878 526 903 486 921 C457 936 439 956 437 986 C436 1014 450 1046 470 1070 C505 1112 515 1184 494 1260 C471 1342 407 1392 338 1412 C280 1430 233 1474 205 1540 L140 1800Z" fill="url(#skin)"/>
+<path d="M252 583 C262 455 348 383 448 390 C520 395 572 434 598 493 C549 461 500 452 455 461 C385 475 326 518 286 590Z" fill="#2b2020"/>
+<path d="M310 802 C352 815 388 817 427 804" fill="none" stroke="#7b3c42" stroke-width="3" opacity=".45"/>
+<circle cx="443" cy="678" r="5" fill="#3e2023" opacity=".75"/>
+<!-- digital profile on right -->
+<g opacity=".94"><path d="M1000 1800 V1120 C944 1088 892 1062 846 1034 C801 1007 770 969 760 923 C752 886 763 849 788 818 C748 783 721 733 714 672 C701 564 756 474 850 441 C923 414 972 430 1000 449Z" fill="url(#digital)" opacity=".3"/><path d="M1000 449 C949 419 887 422 836 456 C761 506 735 596 752 679 C762 726 786 765 820 795 C781 832 767 877 778 923 C792 981 838 1013 889 1038 C936 1062 971 1085 1000 1118" fill="none" stroke="#fff9f2" stroke-width="5" opacity=".82" filter="url(#glow)"/></g>
+<path d="M725 415 H1000 V1210 H725Z" fill="url(#mesh)" opacity=".5" mask="url(#none)"/>
+<!-- digital nodes -->
+<g fill="#7b293a" opacity=".42"><circle cx="829" cy="520" r="4"/><circle cx="910" cy="493" r="3"/><circle cx="862" cy="610" r="4"/><circle cx="938" cy="684" r="5"/><circle cx="830" cy="760" r="3"/><circle cx="895" cy="848" r="4"/><circle cx="946" cy="940" r="3"/><circle cx="830" cy="948" r="4"/></g>
+<g stroke="#7b293a" stroke-width="1" opacity=".24"><path d="M829 520L910 493L862 610L938 684L830 760L895 848L946 940L830 948" fill="none"/><path d="M862 610L830 760M938 684L895 848"/></g>
+<!-- luminous gap -->
+<path d="M617 490 C661 610 661 804 625 946 C604 1030 610 1146 655 1284" fill="none" stroke="#fffaf4" stroke-width="10" opacity=".72" filter="url(#glow)"/>
+<path d="M642 507 C685 630 684 804 651 938" fill="none" stroke="#8a3040" stroke-width="1.6" stroke-dasharray="6 13" opacity=".5"/>
+<!-- abstract dialogue / memory traces -->
+<g fill="none" stroke="#6d3037" opacity=".2"><rect x="96" y="190" width="300" height="124" rx="62"/><rect x="638" y="212" width="245" height="106" rx="53"/><path d="M250 314L225 355M748 318L770 356"/></g>
+<g fill="#6d3037" opacity=".18"><rect x="145" y="232" width="180" height="7" rx="3"/><rect x="145" y="254" width="118" height="5" rx="2"/><rect x="685" y="250" width="150" height="6" rx="3"/><rect x="685" y="272" width="91" height="5" rx="2"/></g>
+<!-- bottom field -->
+<path d="M0 1490 C180 1428 332 1446 492 1515 C650 1582 820 1590 1000 1518 V1800 H0Z" fill="#3a1820" opacity=".24"/>
+</svg>
