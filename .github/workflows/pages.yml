@@ -36,7 +36,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$(find assets/figure-atlas-v3 -maxdepth 1 -name '*.part' -type f | wc -l)" -eq 12
+          test "$(find assets/figure-atlas-v3 -maxdepth 1 -name '*.part' -type f | wc -l)" -eq 14
           cat assets/figure-atlas-v3/*.part | base64 --decode > assets/images/flagship-figures-v3.webp
           test "$(stat -c%s assets/images/flagship-figures-v3.webp)" -eq 82358
           echo "6db61b1109afd0bff0c7e39d7c58eea08ab9e3366d807297fed8fe52a1da2810  assets/images/flagship-figures-v3.webp" | sha256sum -c -
