@@ -34,7 +34,7 @@
 
   const context = {
     experiment: 'topic-demand-v1',
-    session_id: safeSessionId(),
+    experiment_session_id: safeSessionId(),
     path: window.location.pathname,
     page_title: document.title,
     article: article || undefined,
@@ -99,7 +99,11 @@
   const forward = (payload) => {
     if (config.measurementId) {
       loadGA4();
-      window.gtag('event', payload.event, compact({ ...payload, event: undefined }));
+      window.gtag('event', payload.event, compact({
+        ...payload,
+        event: undefined,
+        debug_mode: debug || undefined,
+      }));
     }
     if (config.plausibleDomain) {
       loadPlausible();
@@ -112,7 +116,7 @@
     const payload = compact({ event: name, ...context, ...detail });
     window.dispatchEvent(new CustomEvent('human:track', { detail: payload }));
     forward(payload);
-    if (debug) console.info('[HUMAN analytics]', payload);
+    if (debug) console.info('[HUMAN analytics]', JSON.stringify(payload));
   };
 
   const targetArticleId = (href) => {
