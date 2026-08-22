@@ -4,8 +4,9 @@
 window.HUMAN_ANALYTICS = {
   experiment: 'topic-demand-v1',
 
-  // Google Analytics 4: set to e.g. 'G-XXXXXXXXXX'.
-  measurementId: '',
+  // Google Analytics 4: paste the Web stream Measurement ID, e.g. 'G-ABC123XYZ9'.
+  // A Measurement ID is public website configuration. Never put API secrets or exports here.
+  measurementId: 'G-HK2SR90C03',
 
   // Plausible: set to the registered production hostname, e.g. 'example.com'.
   plausibleDomain: '',

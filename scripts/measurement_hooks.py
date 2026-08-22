@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -6,8 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def patch(
     path: str,
     body_attr: str | None = None,
-    config_src: str = "assets/analytics-config.js?v=1",
-    script_src: str = "assets/analytics.js?v=2",
+    config_src: str = "assets/analytics-config.js?v=2",
+    script_src: str = "assets/analytics.js?v=3",
 ) -> None:
     p = ROOT / path
     s = p.read_text(encoding="utf-8")
@@ -30,26 +33,26 @@ def patch(
 patch("index.html")
 patch(
     "articles/index.html",
-    config_src="../assets/analytics-config.js?v=1",
-    script_src="../assets/analytics.js?v=2",
+    config_src="../assets/analytics-config.js?v=2",
+    script_src="../assets/analytics.js?v=3",
 )
 patch(
     "en/articles/idol-dating-betrayal/index.html",
     "feature-001",
-    "../../../assets/analytics-config.js?v=1",
-    "../../../assets/analytics.js?v=2",
+    "../../../assets/analytics-config.js?v=2",
+    "../../../assets/analytics.js?v=3",
 )
 patch(
     "en/articles/ai-love/index.html",
     "feature-002",
-    "../../../assets/analytics-config.js?v=1",
-    "../../../assets/analytics.js?v=2",
+    "../../../assets/analytics-config.js?v=2",
+    "../../../assets/analytics.js?v=3",
 )
 patch(
     "en/articles/scrolling/index.html",
     "feature-003",
-    "../../../assets/analytics-config.js?v=1",
-    "../../../assets/analytics.js?v=2",
+    "../../../assets/analytics-config.js?v=2",
+    "../../../assets/analytics.js?v=3",
 )
 
 # CI-facing validation: the existing Pages workflow executes this script after every build.
@@ -72,6 +75,13 @@ assert "measurementId" in config
 assert "plausibleDomain" in config
 assert "endpoint" in config
 
+measurement_id_match = re.search(r"measurementId:\s*'([^']*)'", config)
+assert measurement_id_match, "measurementId must use a single-quoted value"
+measurement_id = measurement_id_match.group(1)
+assert not measurement_id or re.fullmatch(r"G-[A-Z0-9]+", measurement_id), (
+    "measurementId must be empty or a GA4 web stream ID such as G-ABC123XYZ9"
+)
+
 for path in (
     "index.html",
     "articles/index.html",
@@ -81,7 +91,7 @@ for path in (
 ):
     built = (ROOT / path).read_text(encoding="utf-8")
     assert "HUMAN_ANALYTICS_HOOK" in built, path
-    assert "analytics-config.js?v=1" in built, path
-    assert "analytics.js?v=2" in built, path
+    assert "analytics-config.js?v=2" in built, path
+    assert "analytics.js?v=3" in built, path
 
 print("HUMAN measurement hooks + Topic Demand v1 instrumentation: OK")

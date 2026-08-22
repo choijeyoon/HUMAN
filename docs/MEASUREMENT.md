@@ -2,31 +2,58 @@
 
 ## Current state
 
-The site now exposes a stable, vendor-neutral event layer without sending any visitor data to a third party.
+The site emits a vendor-neutral `human:track` CustomEvent for every measurement event. `assets/analytics.js` also forwards the same payload to each destination enabled in `assets/analytics-config.js`.
 
-Events:
+No destination is enabled by default. With an empty configuration, no analytics payload leaves the page.
 
-- `select_feature` with `id=feature-001|feature-002|feature-003`
-- `view_article` with the same stable feature IDs
+Topic Demand v1 events:
 
-The browser emits these as `human:track` CustomEvents. No network request is made by `assets/analytics.js`.
+- `feature_impression`: at least 50% of a homepage feature card entered the viewport
+- `select_feature`: a visitor selected a homepage feature
+- `view_article`: a flagship article page loaded
+- `engaged_read`: the article stayed visible for 30 or 60 seconds
+- `scroll_depth`: the reader crossed 25%, 50%, 75%, or 90%
+- `article_complete`: the reader crossed 90%
 
-## Why this structure
+The layer also emits `view_page`, `select_related_article`, and `article_exit` for supporting analysis.
 
-HUMAN can launch without adding a cookie banner or choosing an analytics vendor prematurely. Later, a small adapter can subscribe to `human:track` and forward only the fields we decide to collect.
+## Connect GA4
 
-## Zero-cost next connections
+Open `assets/analytics-config.js` and replace the empty value:
 
-1. Google Search Console — add the verification token when available and submit `/sitemap.xml`.
-2. Optional site analytics — connect a free/privacy-conscious provider or GA4 through one adapter file.
-3. Keep the launch event schema minimal: page path, feature ID, and event name. Avoid collecting article text selections, form contents, or sensitive user attributes.
+```js
+measurementId: '',
+```
 
-## Launch KPIs
+with the Measurement ID from the HUMAN GA4 Web data stream:
 
-- Homepage → flagship feature click-through
-- Relative clicks for Feature 001 / 002 / 003
-- Search impressions and queries by article
-- Indexed-page coverage
-- Referral traffic to individual flagship articles
+```js
+measurementId: 'G-ABC123XYZ9',
+```
 
-Do not optimize for raw pageviews alone; the editorial objective is qualified entry into long-form features.
+Use the exact `G-...` value. Do not add a Google API key, service-account file, account password, raw event export, or visitor-level data. A GA4 Measurement ID is included in public page source by design and is not a secret.
+
+The build check accepts an empty value or an uppercase ID matching `G-[A-Z0-9]+`. It fails before deployment when a configured value has the wrong format.
+
+## Local validation
+
+Run:
+
+```bash
+python3 scripts/build_site.py
+python3 scripts/measurement_hooks.py
+node --check assets/analytics-config.js
+node --check assets/analytics.js
+```
+
+Then serve the repository root and open:
+
+```text
+http://localhost:8000/?debug_analytics=1
+```
+
+The query flag prints emitted payloads in the browser console. It does not enable a destination by itself. When GA4 is configured, it also adds `debug_mode=true` so the events appear in DebugView. Verify `view_page`, `feature_impression`, and `select_feature` on the homepage, then verify `view_article`, `engaged_read`, `scroll_depth`, and `article_complete` on each article. Use GA4 Realtime or DebugView for the final production-stream check.
+
+## Data policy
+
+Keep public experiment design, aggregate results, and reproducible analysis code in GitHub. Keep raw visitor or session data in GA4 or another private store. Commit only non-identifying aggregate counts and rates under `data/` or `docs/topic-results/`.
