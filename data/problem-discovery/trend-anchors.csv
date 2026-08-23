@@ -1,25 +1,25 @@
 anchor_id,market_id,problem_id,query,anchor_status
-ja-jp-a001,ja-jp,pd-001,孤独,unvalidated
+ja-jp-a001,ja-jp,pd-001,孤独,validated
 ja-jp-a002,ja-jp,pd-002,人間関係 疲れた,unvalidated
-ja-jp-a003,ja-jp,pd-003,大人 友達,unvalidated
-ja-jp-a004,ja-jp,pd-004,やる気が出ない,unvalidated
-ja-jp-a005,ja-jp,pd-005,スマホ依存,unvalidated
+ja-jp-a003,ja-jp,pd-003,大人 友達,validated
+ja-jp-a004,ja-jp,pd-004,やる気が出ない,validated
+ja-jp-a005,ja-jp,pd-005,スマホ依存,validated
 ja-jp-a006,ja-jp,pd-006,他人と比べる,unvalidated
-ja-jp-a007,ja-jp,pd-007,AI 恋愛,unvalidated
+ja-jp-a007,ja-jp,pd-007,AI 恋愛,validated
 ja-jp-a008,ja-jp,pd-008,推し 熱愛,unvalidated
-ja-jp-a009,ja-jp,pd-009,感情がない,unvalidated
-ja-jp-a010,ja-jp,pd-010,自分がわからない,unvalidated
-en-us-a001,en-us,pd-001,loneliness,unvalidated
-en-us-a002,en-us,pd-002,social burnout,unvalidated
-en-us-a003,en-us,pd-003,adult friendship,unvalidated
-en-us-a004,en-us,pd-004,no motivation,unvalidated
-en-us-a005,en-us,pd-005,phone addiction,unvalidated
-en-us-a006,en-us,pd-006,comparing yourself to others,unvalidated
-en-us-a007,en-us,pd-007,AI relationship,unvalidated
-en-us-a008,en-us,pd-008,celebrity crush,unvalidated
-en-us-a009,en-us,pd-009,emotional numbness,unvalidated
-en-us-a010,en-us,pd-010,identity crisis,unvalidated
-es-es-a001,es-es,pd-001,soledad,unvalidated
+ja-jp-a009,ja-jp,pd-009,感情がない,validated
+ja-jp-a010,ja-jp,pd-010,自分がわからない,validated
+en-us-a001,en-us,pd-001,loneliness,validated
+en-us-a002,en-us,pd-002,social burnout,validated
+en-us-a003,en-us,pd-003,adult friendship,validated
+en-us-a004,en-us,pd-004,no motivation,validated
+en-us-a005,en-us,pd-005,phone addiction,validated
+en-us-a006,en-us,pd-006,comparing yourself to others,validated
+en-us-a007,en-us,pd-007,AI relationship,validated
+en-us-a008,en-us,pd-008,celebrity crush,validated
+en-us-a009,en-us,pd-009,emotional numbness,validated
+en-us-a010,en-us,pd-010,identity crisis,validated
+es-es-a001,es-es,pd-001,soledad,validated
 es-es-a002,es-es,pd-002,agotamiento social,unvalidated
 es-es-a003,es-es,pd-003,hacer amigos de adulto,unvalidated
 es-es-a004,es-es,pd-004,falta de motivación,unvalidated
@@ -27,9 +27,9 @@ es-es-a005,es-es,pd-005,adicción al móvil,unvalidated
 es-es-a006,es-es,pd-006,compararse con los demás,unvalidated
 es-es-a007,es-es,pd-007,relación con inteligencia artificial,unvalidated
 es-es-a008,es-es,pd-008,obsesión con famosos,unvalidated
-es-es-a009,es-es,pd-009,bloqueo emocional,unvalidated
-es-es-a010,es-es,pd-010,crisis de identidad,unvalidated
-es-mx-a001,es-mx,pd-001,soledad,unvalidated
+es-es-a009,es-es,pd-009,bloqueo emocional,validated
+es-es-a010,es-es,pd-010,crisis de identidad,validated
+es-mx-a001,es-mx,pd-001,soledad,validated
 es-mx-a002,es-mx,pd-002,agotamiento social,unvalidated
 es-mx-a003,es-mx,pd-003,hacer amigos de adulto,unvalidated
 es-mx-a004,es-mx,pd-004,falta de motivación,unvalidated
@@ -38,4 +38,4 @@ es-mx-a006,es-mx,pd-006,compararse con los demás,unvalidated
 es-mx-a007,es-mx,pd-007,relación con inteligencia artificial,unvalidated
 es-mx-a008,es-mx,pd-008,obsesión con famosos,unvalidated
 es-mx-a009,es-mx,pd-009,vacío emocional,unvalidated
-es-mx-a010,es-mx,pd-010,crisis de identidad,unvalidated
+es-mx-a010,es-mx,pd-010,crisis de identidad,validated
