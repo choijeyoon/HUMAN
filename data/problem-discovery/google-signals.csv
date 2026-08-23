@@ -1,1 +1,41 @@
-query_id,market_id,collected_on,source,window,avg_monthly_searches,trends_mean,trends_recent_direction,trends_breakout,seasonality,related_top_count,related_rising_count,notes
+query_id,market_id,collected_on,source,window,batch_id,avg_monthly_searches,trends_mean,trends_recent_direction,trends_breakout,seasonality,related_top_count,related_rising_count,weeks_observed,nonzero_weeks,recent_26w_mean,previous_26w_mean,notes
+ja-jp-a001,ja-jp,2026-08-23,google_trends,latest_5_years,jp-01,,26,stable,,,,,262,262,23.27,25.12,jointly normalized batch; not comparable across batches
+ja-jp-a002,ja-jp,2026-08-23,google_trends,latest_5_years,jp-01,,0,insufficient,,,,,262,0,0,0,too sparse in joint batch; recheck alone or replace anchor
+ja-jp-a003,ja-jp,2026-08-23,google_trends,latest_5_years,jp-01,,1,stable,,,,,262,257,0.96,0.96,jointly normalized batch; not comparable across batches
+ja-jp-a004,ja-jp,2026-08-23,google_trends,latest_5_years,jp-01,,3,stable,,,,,262,262,2.04,2.15,jointly normalized batch; not comparable across batches
+ja-jp-a005,ja-jp,2026-08-23,google_trends,latest_5_years,jp-01,,2,stable,,,,,262,262,1.62,1.54,jointly normalized batch; not comparable across batches
+ja-jp-a006,ja-jp,2026-08-23,google_trends,latest_5_years,jp-02,,0,insufficient,,,,,262,15,0.08,0.12,too sparse in joint batch; recheck alone or replace anchor
+ja-jp-a007,ja-jp,2026-08-23,google_trends,latest_5_years,jp-02,,5,rising,,,,,262,189,19.42,13,jointly normalized batch; not comparable across batches
+ja-jp-a008,ja-jp,2026-08-23,google_trends,latest_5_years,jp-02,,0,insufficient,,,,,262,12,0.23,0,too sparse in joint batch; recheck alone or replace anchor
+ja-jp-a009,ja-jp,2026-08-23,google_trends,latest_5_years,jp-02,,28,rising,,,,,262,262,34.46,28.5,jointly normalized batch; not comparable across batches
+ja-jp-a010,ja-jp,2026-08-23,google_trends,latest_5_years,jp-02,,30,stable,,,,,262,262,33.54,29.96,jointly normalized batch; not comparable across batches
+en-us-a001,en-us,2026-08-23,google_trends,latest_5_years,us-01,,34,rising,,,,,262,262,62.85,45.73,jointly normalized batch; not comparable across batches
+en-us-a002,en-us,2026-08-23,google_trends,latest_5_years,us-01,,1,rising,,,,,262,218,4.88,3.04,jointly normalized batch; not comparable across batches
+en-us-a003,en-us,2026-08-23,google_trends,latest_5_years,us-01,,1,rising,,,,,262,227,2.65,1.5,jointly normalized batch; not comparable across batches
+en-us-a004,en-us,2026-08-23,google_trends,latest_5_years,us-01,,8,stable,,,,,262,262,13.08,11.77,jointly normalized batch; not comparable across batches
+en-us-a005,en-us,2026-08-23,google_trends,latest_5_years,us-01,,5,rising,,,,,262,262,9.81,7.88,jointly normalized batch; not comparable across batches
+en-us-a006,en-us,2026-08-23,google_trends,latest_5_years,us-02,,1,stable,,,,,262,256,1.12,1,jointly normalized batch; not comparable across batches
+en-us-a007,en-us,2026-08-23,google_trends,latest_5_years,us-02,,17,stable,,,,,262,198,63.69,59.12,jointly normalized batch; not comparable across batches
+en-us-a008,en-us,2026-08-23,google_trends,latest_5_years,us-02,,3,stable,,,,,262,262,3.31,2.85,jointly normalized batch; not comparable across batches
+en-us-a009,en-us,2026-08-23,google_trends,latest_5_years,us-02,,2,rising,,,,,262,259,6,2.35,jointly normalized batch; not comparable across batches
+en-us-a010,en-us,2026-08-23,google_trends,latest_5_years,us-02,,6,stable,,,,,262,262,9.65,8.5,jointly normalized batch; not comparable across batches
+es-es-a001,es-es,2026-08-23,google_trends,latest_5_years,es-01,,37,rising,,,,,262,262,39.88,31.96,jointly normalized batch; not comparable across batches
+es-es-a002,es-es,2026-08-23,google_trends,latest_5_years,es-01,,0,insufficient,,,,,262,3,0.08,0,too sparse in joint batch; recheck alone or replace anchor
+es-es-a003,es-es,2026-08-23,google_trends,latest_5_years,es-01,,0,insufficient,,,,,262,1,0,0.04,too sparse in joint batch; recheck alone or replace anchor
+es-es-a004,es-es,2026-08-23,google_trends,latest_5_years,es-01,,0,insufficient,,,,,262,3,0.04,0,too sparse in joint batch; recheck alone or replace anchor
+es-es-a005,es-es,2026-08-23,google_trends,latest_5_years,es-01,,0,insufficient,,,,,262,2,0,0,too sparse in joint batch; recheck alone or replace anchor
+es-es-a006,es-es,2026-08-23,google_trends,latest_5_years,es-02,,0,insufficient,,,,,262,1,0,1.62,too sparse in joint batch; recheck alone or replace anchor
+es-es-a007,es-es,2026-08-23,google_trends,latest_5_years,es-02,,1,insufficient,,,,,262,7,0.27,3.42,too sparse in joint batch; recheck alone or replace anchor
+es-es-a008,es-es,2026-08-23,google_trends,latest_5_years,es-02,,0,insufficient,,,,,262,0,0,0,too sparse in joint batch; recheck alone or replace anchor
+es-es-a009,es-es,2026-08-23,google_trends,latest_5_years,es-02,,26,stable,,,,,262,129,23.5,21.31,jointly normalized batch; not comparable across batches
+es-es-a010,es-es,2026-08-23,google_trends,latest_5_years,es-02,,2,falling,,,,,262,15,0.85,1.85,jointly normalized batch; low resolution; recheck before editorial use
+es-mx-a001,es-mx,2026-08-23,google_trends,latest_5_years,mx-01,,42,stable,,,,,262,262,37.65,37.35,jointly normalized batch; not comparable across batches
+es-mx-a002,es-mx,2026-08-23,google_trends,latest_5_years,mx-01,,0,insufficient,,,,,262,1,0,0,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a003,es-mx,2026-08-23,google_trends,latest_5_years,mx-01,,0,insufficient,,,,,262,0,0,0,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a004,es-mx,2026-08-23,google_trends,latest_5_years,mx-01,,0,insufficient,,,,,262,8,0.08,0.04,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a005,es-mx,2026-08-23,google_trends,latest_5_years,mx-01,,0,insufficient,,,,,262,14,0,0,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a006,es-mx,2026-08-23,google_trends,latest_5_years,mx-02,,0,insufficient,,,,,262,2,0,1.42,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a007,es-mx,2026-08-23,google_trends,latest_5_years,mx-02,,1,insufficient,,,,,262,6,2,1.58,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a008,es-mx,2026-08-23,google_trends,latest_5_years,mx-02,,0,insufficient,,,,,262,2,0,0,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a009,es-mx,2026-08-23,google_trends,latest_5_years,mx-02,,1,insufficient,,,,,262,6,0.73,1.58,too sparse in joint batch; recheck alone or replace anchor
+es-mx-a010,es-mx,2026-08-23,google_trends,latest_5_years,mx-02,,20,falling,,,,,262,107,6.23,10.46,jointly normalized batch; not comparable across batches
