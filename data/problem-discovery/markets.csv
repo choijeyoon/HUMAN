@@ -1,0 +1,5 @@
+market_id,country,language,google_geo,google_language,time_zone,status
+ja-jp,Japan,Japanese,JP,ja,Asia/Tokyo,active
+en-us,United States,English,US,en,America/New_York,active
+es-es,Spain,Spanish,ES,es,Europe/Madrid,active
+es-mx,Mexico,Spanish,MX,es,America/Mexico_City,active
