@@ -17,6 +17,8 @@ A zero-cost, multilingual human-science media MVP.
 - `scripts/analyze_topic_demand.py` — dependency-free aggregate metric summary
 - `scripts/validate_problem_discovery.py` — safety and schema checks for discovery inputs
 - `scripts/analyze_problem_discovery.py` — collection coverage report without a combined market score
+- `scripts/prepare_keyword_planner_inputs.py` — private market-specific Keyword Planner input generator
+- `docs/keyword-planner-collection.md` — fixed collection and data-safety procedure
 - `.github/workflows/pages.yml` — static GitHub Pages deployment workflow
 
 ## Experiment data policy
