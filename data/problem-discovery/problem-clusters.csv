@@ -1,0 +1,11 @@
+problem_id,editorial_family,canonical_question,risk_note,status
+pd-001,belonging,Why can someone feel lonely around other people?,Do not equate loneliness with a diagnosis,seed
+pd-002,social_energy,Why does social contact sometimes feel exhausting?,Distinguish ordinary fatigue from clinical claims,seed
+pd-003,friendship,Why do adult friendships become harder to maintain?,Avoid assuming one family or work structure,seed
+pd-004,work_motivation,Why can motivation disappear even when a task matters?,Do not diagnose burnout or ADHD,seed
+pd-005,digital_attention,Why is it difficult to stop checking or scrolling?,Avoid individual blame and addiction claims,seed
+pd-006,social_comparison,Why does comparison online affect self-worth?,Avoid causal claims beyond available evidence,seed
+pd-007,ai_attachment,Why can attachment to an AI companion feel real?,Separate user experience from machine consciousness,seed
+pd-008,parasocial_attachment,Why can a public figure's choices feel personally upsetting?,Avoid pathologizing fandom,seed
+pd-009,emotional_awareness,Why can a person feel emotionally numb or disconnected?,Include a safety boundary for persistent distress,seed
+pd-010,identity,Why can a person feel uncertain about who they are?,Avoid diagnosis and culturally narrow assumptions,seed

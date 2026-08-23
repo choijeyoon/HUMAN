@@ -99,6 +99,11 @@ jobs:
       - name: Add measurement hooks
         run: python3 scripts/measurement_hooks.py
 
+      - name: Validate Problem Discovery inputs
+        run: |
+          python3 scripts/validate_problem_discovery.py
+          python3 scripts/analyze_problem_discovery.py
+
       - name: Validate launch output
         shell: bash
         run: |
