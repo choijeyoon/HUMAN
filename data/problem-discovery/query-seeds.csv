@@ -1,0 +1,121 @@
+query_id,market_id,problem_id,intent,query,seed_status
+ja-jp-001-e,ja-jp,pd-001,experience,人といても孤独,unvalidated
+ja-jp-001-x,ja-jp,pd-001,explanation,友達がいるのに孤独を感じるのはなぜ,unvalidated
+ja-jp-001-s,ja-jp,pd-001,solution,孤独感をなくす方法,unvalidated
+ja-jp-002-e,ja-jp,pd-002,experience,人と会うと疲れる,unvalidated
+ja-jp-002-x,ja-jp,pd-002,explanation,人と話すと疲れるのはなぜ,unvalidated
+ja-jp-002-s,ja-jp,pd-002,solution,人付き合いで疲れない方法,unvalidated
+ja-jp-003-e,ja-jp,pd-003,experience,大人になって友達が減った,unvalidated
+ja-jp-003-x,ja-jp,pd-003,explanation,大人になると友達ができないのはなぜ,unvalidated
+ja-jp-003-s,ja-jp,pd-003,solution,大人の友達の作り方,unvalidated
+ja-jp-004-e,ja-jp,pd-004,experience,やる気が出ない,unvalidated
+ja-jp-004-x,ja-jp,pd-004,explanation,やるべきことがあるのに動けないのはなぜ,unvalidated
+ja-jp-004-s,ja-jp,pd-004,solution,やる気を出す方法,unvalidated
+ja-jp-005-e,ja-jp,pd-005,experience,スマホを見るのをやめられない,unvalidated
+ja-jp-005-x,ja-jp,pd-005,explanation,SNSをずっと見てしまうのはなぜ,unvalidated
+ja-jp-005-s,ja-jp,pd-005,solution,スマホを見すぎない方法,unvalidated
+ja-jp-006-e,ja-jp,pd-006,experience,SNSで人と比べて落ち込む,unvalidated
+ja-jp-006-x,ja-jp,pd-006,explanation,他人と比べてしまうのはなぜ,unvalidated
+ja-jp-006-s,ja-jp,pd-006,solution,人と比べない方法,unvalidated
+ja-jp-007-e,ja-jp,pd-007,experience,AIに恋愛感情,unvalidated
+ja-jp-007-x,ja-jp,pd-007,explanation,AIを好きになるのはおかしい,unvalidated
+ja-jp-007-s,ja-jp,pd-007,solution,AIとの恋愛をやめたい,unvalidated
+ja-jp-008-e,ja-jp,pd-008,experience,推しの熱愛がつらい,unvalidated
+ja-jp-008-x,ja-jp,pd-008,explanation,推しの結婚がショックなのはなぜ,unvalidated
+ja-jp-008-s,ja-jp,pd-008,solution,推しの熱愛から立ち直る方法,unvalidated
+ja-jp-009-e,ja-jp,pd-009,experience,何も感じない,unvalidated
+ja-jp-009-x,ja-jp,pd-009,explanation,感情がわからないのはなぜ,unvalidated
+ja-jp-009-s,ja-jp,pd-009,solution,感情を取り戻す方法,unvalidated
+ja-jp-010-e,ja-jp,pd-010,experience,自分が何者かわからない,unvalidated
+ja-jp-010-x,ja-jp,pd-010,explanation,自分らしさがわからないのはなぜ,unvalidated
+ja-jp-010-s,ja-jp,pd-010,solution,自分らしさを見つける方法,unvalidated
+en-us-001-e,en-us,pd-001,experience,feeling lonely around people,unvalidated
+en-us-001-x,en-us,pd-001,explanation,why do I feel lonely even with friends,unvalidated
+en-us-001-s,en-us,pd-001,solution,how to feel less lonely,unvalidated
+en-us-002-e,en-us,pd-002,experience,socializing makes me tired,unvalidated
+en-us-002-x,en-us,pd-002,explanation,why do I feel drained after talking to people,unvalidated
+en-us-002-s,en-us,pd-002,solution,how to stop feeling socially drained,unvalidated
+en-us-003-e,en-us,pd-003,experience,losing friends as an adult,unvalidated
+en-us-003-x,en-us,pd-003,explanation,why is it hard to make friends as an adult,unvalidated
+en-us-003-s,en-us,pd-003,solution,how to make friends as an adult,unvalidated
+en-us-004-e,en-us,pd-004,experience,no motivation to do anything,unvalidated
+en-us-004-x,en-us,pd-004,explanation,why can't I start tasks even when they matter,unvalidated
+en-us-004-s,en-us,pd-004,solution,how to get motivated to do things,unvalidated
+en-us-005-e,en-us,pd-005,experience,can't stop checking my phone,unvalidated
+en-us-005-x,en-us,pd-005,explanation,why can't I stop scrolling,unvalidated
+en-us-005-s,en-us,pd-005,solution,how to stop scrolling so much,unvalidated
+en-us-006-e,en-us,pd-006,experience,social media makes me feel bad about myself,unvalidated
+en-us-006-x,en-us,pd-006,explanation,why do I compare myself to everyone online,unvalidated
+en-us-006-s,en-us,pd-006,solution,how to stop comparing myself to others,unvalidated
+en-us-007-e,en-us,pd-007,experience,falling in love with an AI,unvalidated
+en-us-007-x,en-us,pd-007,explanation,why do I feel attached to an AI chatbot,unvalidated
+en-us-007-s,en-us,pd-007,solution,how to stop being attached to an AI,unvalidated
+en-us-008-e,en-us,pd-008,experience,celebrity relationship news hurts,unvalidated
+en-us-008-x,en-us,pd-008,explanation,why do I feel jealous when my favorite celebrity dates,unvalidated
+en-us-008-s,en-us,pd-008,solution,how to get over a celebrity crush,unvalidated
+en-us-009-e,en-us,pd-009,experience,feeling emotionally numb,unvalidated
+en-us-009-x,en-us,pd-009,explanation,why don't I feel anything anymore,unvalidated
+en-us-009-s,en-us,pd-009,solution,how to feel emotions again,unvalidated
+en-us-010-e,en-us,pd-010,experience,I don't know who I am anymore,unvalidated
+en-us-010-x,en-us,pd-010,explanation,why do I feel like I have no identity,unvalidated
+en-us-010-s,en-us,pd-010,solution,how to figure out who I am,unvalidated
+es-es-001-e,es-es,pd-001,experience,me siento solo aunque esté con gente,unvalidated
+es-es-001-x,es-es,pd-001,explanation,por qué me siento solo si tengo amigos,unvalidated
+es-es-001-s,es-es,pd-001,solution,cómo dejar de sentirme solo,unvalidated
+es-es-002-e,es-es,pd-002,experience,estar con gente me agota,unvalidated
+es-es-002-x,es-es,pd-002,explanation,por qué me cansa tanto socializar,unvalidated
+es-es-002-s,es-es,pd-002,solution,cómo evitar el agotamiento social,unvalidated
+es-es-003-e,es-es,pd-003,experience,he perdido amigos al hacerme adulto,unvalidated
+es-es-003-x,es-es,pd-003,explanation,por qué cuesta hacer amigos de adulto,unvalidated
+es-es-003-s,es-es,pd-003,solution,cómo hacer amigos de adulto,unvalidated
+es-es-004-e,es-es,pd-004,experience,no tengo ganas de hacer nada,unvalidated
+es-es-004-x,es-es,pd-004,explanation,por qué no puedo empezar las cosas,unvalidated
+es-es-004-s,es-es,pd-004,solution,cómo recuperar la motivación,unvalidated
+es-es-005-e,es-es,pd-005,experience,no puedo dejar de mirar el móvil,unvalidated
+es-es-005-x,es-es,pd-005,explanation,por qué no puedo dejar de hacer scroll,unvalidated
+es-es-005-s,es-es,pd-005,solution,cómo usar menos el móvil,unvalidated
+es-es-006-e,es-es,pd-006,experience,las redes sociales me hacen sentir inferior,unvalidated
+es-es-006-x,es-es,pd-006,explanation,por qué me comparo tanto con los demás,unvalidated
+es-es-006-s,es-es,pd-006,solution,cómo dejar de compararme con los demás,unvalidated
+es-es-007-e,es-es,pd-007,experience,enamorarse de una inteligencia artificial,unvalidated
+es-es-007-x,es-es,pd-007,explanation,por qué siento apego por un chatbot,unvalidated
+es-es-007-s,es-es,pd-007,solution,cómo dejar de depender emocionalmente de una IA,unvalidated
+es-es-008-e,es-es,pd-008,experience,me afecta que mi famoso favorito tenga pareja,unvalidated
+es-es-008-x,es-es,pd-008,explanation,por qué siento celos de la pareja de un famoso,unvalidated
+es-es-008-s,es-es,pd-008,solution,cómo superar la obsesión por un famoso,unvalidated
+es-es-009-e,es-es,pd-009,experience,no siento nada emocionalmente,unvalidated
+es-es-009-x,es-es,pd-009,explanation,por qué no siento emociones,unvalidated
+es-es-009-s,es-es,pd-009,solution,cómo volver a sentir emociones,unvalidated
+es-es-010-e,es-es,pd-010,experience,no sé quién soy,unvalidated
+es-es-010-x,es-es,pd-010,explanation,por qué siento que no tengo identidad,unvalidated
+es-es-010-s,es-es,pd-010,solution,cómo descubrir quién soy,unvalidated
+es-mx-001-e,es-mx,pd-001,experience,me siento solo aunque esté con gente,unvalidated
+es-mx-001-x,es-mx,pd-001,explanation,por qué me siento solo si tengo amigos,unvalidated
+es-mx-001-s,es-mx,pd-001,solution,cómo dejar de sentirme solo,unvalidated
+es-mx-002-e,es-mx,pd-002,experience,convivir con gente me agota,unvalidated
+es-mx-002-x,es-mx,pd-002,explanation,por qué me cansa tanto socializar,unvalidated
+es-mx-002-s,es-mx,pd-002,solution,cómo dejar de sentirme agotado después de socializar,unvalidated
+es-mx-003-e,es-mx,pd-003,experience,he perdido amigos de adulto,unvalidated
+es-mx-003-x,es-mx,pd-003,explanation,por qué es difícil hacer amigos de adulto,unvalidated
+es-mx-003-s,es-mx,pd-003,solution,cómo hacer amigos de adulto,unvalidated
+es-mx-004-e,es-mx,pd-004,experience,no tengo ganas de hacer nada,unvalidated
+es-mx-004-x,es-mx,pd-004,explanation,por qué no puedo empezar mis pendientes,unvalidated
+es-mx-004-s,es-mx,pd-004,solution,cómo volver a tener motivación,unvalidated
+es-mx-005-e,es-mx,pd-005,experience,no puedo dejar de revisar el celular,unvalidated
+es-mx-005-x,es-mx,pd-005,explanation,por qué no puedo dejar de hacer scroll,unvalidated
+es-mx-005-s,es-mx,pd-005,solution,cómo usar menos el celular,unvalidated
+es-mx-006-e,es-mx,pd-006,experience,las redes sociales me hacen sentir menos,unvalidated
+es-mx-006-x,es-mx,pd-006,explanation,por qué me comparo tanto con otras personas,unvalidated
+es-mx-006-s,es-mx,pd-006,solution,cómo dejar de compararme con los demás,unvalidated
+es-mx-007-e,es-mx,pd-007,experience,enamorarse de una inteligencia artificial,unvalidated
+es-mx-007-x,es-mx,pd-007,explanation,por qué siento apego por un chatbot de IA,unvalidated
+es-mx-007-s,es-mx,pd-007,solution,cómo dejar de depender emocionalmente de una IA,unvalidated
+es-mx-008-e,es-mx,pd-008,experience,me afecta que mi artista favorito tenga pareja,unvalidated
+es-mx-008-x,es-mx,pd-008,explanation,por qué siento celos de la pareja de un famoso,unvalidated
+es-mx-008-s,es-mx,pd-008,solution,cómo superar la obsesión por un famoso,unvalidated
+es-mx-009-e,es-mx,pd-009,experience,me siento emocionalmente vacío,unvalidated
+es-mx-009-x,es-mx,pd-009,explanation,por qué siento que no tengo emociones,unvalidated
+es-mx-009-s,es-mx,pd-009,solution,cómo volver a conectar con mis emociones,unvalidated
+es-mx-010-e,es-mx,pd-010,experience,no sé quién soy,unvalidated
+es-mx-010-x,es-mx,pd-010,explanation,por qué siento que no tengo identidad,unvalidated
+es-mx-010-s,es-mx,pd-010,solution,cómo descubrir quién soy,unvalidated
