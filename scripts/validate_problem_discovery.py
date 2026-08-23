@@ -173,6 +173,16 @@ def validate_signals(
             value = parse_optional_number(row[field], field)
             if value is not None and not value.is_integer():
                 raise ValueError(f"google-signals.csv:{line}: {field} must be an integer")
+        for field in ("weeks_observed", "nonzero_weeks"):
+            value = parse_optional_number(row[field], field)
+            if value is not None and not value.is_integer():
+                raise ValueError(f"google-signals.csv:{line}: {field} must be an integer")
+        weeks = parse_optional_number(row["weeks_observed"], "weeks_observed")
+        nonzero_weeks = parse_optional_number(row["nonzero_weeks"], "nonzero_weeks")
+        if weeks is not None and nonzero_weeks is not None and nonzero_weeks > weeks:
+            raise ValueError(f"google-signals.csv:{line}: nonzero_weeks exceeds weeks_observed")
+        parse_optional_number(row["recent_26w_mean"], "recent_26w_mean")
+        parse_optional_number(row["previous_26w_mean"], "previous_26w_mean")
         direction = row["trends_recent_direction"].strip()
         if direction and direction not in VALID_DIRECTIONS:
             raise ValueError(f"google-signals.csv:{line}: invalid direction {direction}")
@@ -185,6 +195,8 @@ def validate_signals(
             raise ValueError(f"google-signals.csv:{line}: trends_mean belongs to Google Trends")
         if source == "google_trends" and query_id not in anchor_ids:
             raise ValueError(f"google-signals.csv:{line}: Trends observations must use a trend anchor")
+        if source == "google_trends" and not row["batch_id"].strip():
+            raise ValueError(f"google-signals.csv:{line}: Trends observations require batch_id")
         if URL_OR_EMAIL.search(row["notes"]):
             raise ValueError(f"google-signals.csv:{line}: notes must not contain URLs or email addresses")
 
